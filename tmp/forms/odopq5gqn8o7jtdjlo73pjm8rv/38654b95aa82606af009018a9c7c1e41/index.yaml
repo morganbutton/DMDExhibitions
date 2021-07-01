@@ -1,0 +1,109 @@
+form: flex-pages
+unique_id: 38654b95aa82606af009018a9c7c1e41
+url: 'http://localhost/dmdExhibitions/admin/pages/dmdexhibitions'
+user:
+  username: mtb5591
+  email: morgan_button@outlook.com
+timestamps:
+  created: 1625097976
+  updated: 1625097977
+data:
+  header:
+    title: 'DMD Exhibitions'
+    media_order: null
+    body_classes: null
+    order_by: null
+    order_manual: null
+    hero_classes: null
+    hero_image: null
+    content:
+      items:
+        - { '@taxonomy': { type: [exhibition] } }
+      limit: 5000
+      order:
+        by: date
+        dir: desc
+      pagination: true
+      url_taxonomy_filters: true
+    published: null
+    date: null
+    publish_date: null
+    unpublish_date: null
+    metadata: null
+    taxonomy: null
+    dateformat: null
+    menu: null
+    slug: null
+    redirect: null
+    process: null
+    twig_first: null
+    never_cache_twig: null
+    child_type: null
+    routable: null
+    cache_enable: null
+    visible: null
+    debugger: null
+    template: null
+    append_url_extension: null
+    routes:
+      default: null
+      canonical: null
+      aliases: null
+    admin:
+      children_display_order: null
+    blog_url: null
+    show_sidebar: null
+    show_breadcrumbs: null
+    show_pagination: null
+    login:
+      visibility_requires_access: null
+    access: null
+    permissions:
+      inherit: null
+      authors: null
+      groups: null
+  content: "#DMD Online Exhibitions\n"
+  folder: dmdExhibitions
+  route: null
+  name: blog
+  ordering: true
+  order: null
+  blueprint: null
+  lang: null
+  xss_check: null
+  value: null
+  _post_entries_save: null
+files: {  }
+object:
+  type: pages
+  key: dmdexhibitions
+  storage_key: 01.dmdExhibitions
+  timestamp: 1625097211
+  serialized:
+    __META:
+      key: dmdexhibitions
+      storage_key: 01.dmdExhibitions
+      template: blog
+      storage_timestamp: 1625097211
+      markdown:
+        '': { blog: 1624426799 }
+      checksum: ee0df8317b08b3ac50e98d3bdb8b8051
+    storage_key: 01.dmdExhibitions
+    parent_key: ''
+    order: '01.'
+    folder: dmdExhibitions
+    template: blog
+    lang: ''
+    header:
+      title: 'DMD Online Exhibitions'
+      content:
+        items: [{ '@taxonomy': { type: [exhibition] } }]
+        order: { by: date, dir: desc }
+        pagination: true
+        url_taxonomy_filters: true
+        limit: 5000
+    root: false
+    frontmatter: "title: \"DMD Online Exhibitions\"\ncontent:\n  items:\n    - \"@taxonomy\":\n        type:\n          - exhibition\n\n  order:\n    by: date\n    dir: desc\n  pagination: true\n  url_taxonomy_filters: true\n  limit: 5000"
+    markdown: "#DMD Online Exhibitions\n"
+    slug: dmdexhibitions
+    name: blog.md
