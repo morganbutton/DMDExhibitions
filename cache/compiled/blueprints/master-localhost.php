@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledBlueprints',
-    'timestamp' => 1625098680,
-    'checksum' => '630d7e28708d672ad81b3938cb856d6c',
+    'timestamp' => 1625627856,
+    'checksum' => '542b4adc02e3d3128808742b4020d96a',
     'files' => [
         'user/plugins/admin/blueprints/config' => [
             'media' => [
@@ -41,6 +41,10 @@ return [
             ]
         ],
         'user/plugins' => [
+            'plugins/add-page-by-form' => [
+                'file' => 'user/plugins/add-page-by-form/blueprints.yaml',
+                'modified' => 1625627854
+            ],
             'plugins/admin' => [
                 'file' => 'user/plugins/admin/blueprints.yaml',
                 'modified' => 1625096566
@@ -2760,17 +2764,146 @@ return [
                 'name' => 'system.accounts.storage',
                 'validation' => 'loose'
             ],
-            'plugins.admin' => [
+            'plugins.add-page-by-form' => [
                 'type' => '_root',
                 'form_field' => false,
                 'form' => [
-                    'validation' => 'loose'
+                    'validation' => 'strict'
                 ]
             ],
             'plugins' => [
                 'type' => '_parent',
                 'name' => 'plugins',
                 'form_field' => false
+            ],
+            'plugins.add-page-by-form.enabled' => [
+                'type' => 'toggle',
+                'label' => 'Plugin status',
+                'highlight' => 1,
+                'default' => 0,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.add-page-by-form.enabled',
+                'validation' => 'strict'
+            ],
+            'plugins.add-page-by-form.default_title' => [
+                'type' => 'text',
+                'size' => 'large',
+                'label' => 'Default Page Title',
+                'name' => 'plugins.add-page-by-form.default_title',
+                'validation' => 'strict'
+            ],
+            'plugins.add-page-by-form.default_content' => [
+                'type' => 'text',
+                'size' => 'large',
+                'label' => 'Default Page Content',
+                'name' => 'plugins.add-page-by-form.default_content',
+                'validation' => 'strict'
+            ],
+            'plugins.add-page-by-form.include_username' => [
+                'type' => 'toggle',
+                'label' => 'Include username',
+                'highlight' => 0,
+                'default' => 0,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.add-page-by-form.include_username',
+                'validation' => 'strict'
+            ],
+            'plugins.add-page-by-form.overwrite_mode' => [
+                'type' => 'select',
+                'label' => 'Overwrite mode',
+                'highlight' => 0,
+                'default' => false,
+                'options' => [
+                    0 => 'Disabled',
+                    1 => 'Enabled',
+                    'edit' => 'Edit'
+                ],
+                'name' => 'plugins.add-page-by-form.overwrite_mode',
+                'validation' => 'strict'
+            ],
+            'plugins.add-page-by-form.auto_taxonomy_types' => [
+                'type' => 'toggle',
+                'label' => 'Add new taxonomy types',
+                'highlight' => 0,
+                'default' => 0,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.add-page-by-form.auto_taxonomy_types',
+                'validation' => 'strict'
+            ],
+            'plugins.add-page-by-form.use_editor_class' => [
+                'type' => 'toggle',
+                'label' => 'Use the editor class',
+                'highlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.add-page-by-form.use_editor_class',
+                'validation' => 'strict'
+            ],
+            'plugins.add-page-by-form.date_display_format' => [
+                'type' => 'select',
+                'size' => 'medium',
+                'classes' => 'fancy',
+                'label' => 'Date Format',
+                'default' => 'd-m-Y H:i',
+                'options' => [
+                    'F jS Y' => 'February 1st 2014',
+                    'l jS of F' => 'Saturday 1st of February',
+                    'D, m M Y' => 'Sat, 01 Feb 2014',
+                    'd-m-y' => '01-02-14',
+                    'd-m-Y' => '01-02-2014',
+                    'jS M Y' => '1st Feb 2014',
+                    'F Y' => 'Feb 2014',
+                    'Y-m-d' => '2014-02-01',
+                    'd-m-Y H:i' => '01-02-2014 09:30'
+                ],
+                'name' => 'plugins.add-page-by-form.date_display_format',
+                'validation' => 'strict'
+            ],
+            'plugins.add-page-by-form.physical_template_name' => [
+                'type' => 'toggle',
+                'label' => 'Physical template name',
+                'highlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.add-page-by-form.physical_template_name',
+                'validation' => 'strict'
+            ],
+            'plugins.admin' => [
+                'type' => '_root',
+                'form_field' => false,
+                'form' => [
+                    'validation' => 'loose'
+                ]
             ],
             'plugins.admin.enabled' => [
                 'type' => 'hidden',
@@ -5391,6 +5524,17 @@ return [
                 ]
             ],
             'plugins' => [
+                'add-page-by-form' => [
+                    'enabled' => 'plugins.add-page-by-form.enabled',
+                    'default_title' => 'plugins.add-page-by-form.default_title',
+                    'default_content' => 'plugins.add-page-by-form.default_content',
+                    'include_username' => 'plugins.add-page-by-form.include_username',
+                    'overwrite_mode' => 'plugins.add-page-by-form.overwrite_mode',
+                    'auto_taxonomy_types' => 'plugins.add-page-by-form.auto_taxonomy_types',
+                    'use_editor_class' => 'plugins.add-page-by-form.use_editor_class',
+                    'date_display_format' => 'plugins.add-page-by-form.date_display_format',
+                    'physical_template_name' => 'plugins.add-page-by-form.physical_template_name'
+                ],
                 'admin' => [
                     'enabled' => 'plugins.admin.enabled',
                     'cache_enabled' => 'plugins.admin.cache_enabled',

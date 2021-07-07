@@ -1,13 +1,17 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1625098675,
-    'checksum' => '2bedc1b6186091d1a61c32a9db3286a8',
+    'timestamp' => 1625632105,
+    'checksum' => '1db20a3c7c3241ee18f4f6defb46bc90',
     'files' => [
         'user/config' => [
             'media' => [
                 'file' => 'user/config/media.yaml',
                 'modified' => 1625096806
+            ],
+            'plugins/form' => [
+                'file' => 'user/config/plugins/form.yaml',
+                'modified' => 1625632105
             ],
             'security' => [
                 'file' => 'user/config/security.yaml',
@@ -53,6 +57,10 @@ return [
             ]
         ],
         'user/plugins' => [
+            'plugins/add-page-by-form' => [
+                'file' => 'user/plugins/add-page-by-form/add-page-by-form.yaml',
+                'modified' => 1625627854
+            ],
             'plugins/admin' => [
                 'file' => 'user/plugins/admin/admin.yaml',
                 'modified' => 1625096567
@@ -112,6 +120,17 @@ return [
             ]
         ],
         'plugins' => [
+            'add-page-by-form' => [
+                'enabled' => true,
+                'date_display_format' => 'd-m-Y H:i',
+                'default_title' => 'My New Page',
+                'default_content' => 'No content.',
+                'overwrite_mode' => false,
+                'include_username' => false,
+                'auto_taxonomy_types' => false,
+                'use_editor_class' => true,
+                'physical_template_name' => true
+            ],
             'admin' => [
                 'enabled' => true,
                 'route' => '/admin',
@@ -274,7 +293,7 @@ return [
                 'client_side_validation' => true,
                 'inline_errors' => false,
                 'files' => [
-                    'multiple' => false,
+                    'multiple' => true,
                     'limit' => 10,
                     'destination' => 'self@',
                     'avoid_overwriting' => false,

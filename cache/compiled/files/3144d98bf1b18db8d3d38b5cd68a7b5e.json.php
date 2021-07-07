@@ -2,24 +2,25 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledJsonFile',
     'filename' => 'C:/wamp64/www/dmdExhibitions/user/data/flex/indexes/pages.json',
-    'modified' => 1625098518,
+    'modified' => 1625634825,
     'data' => [
         'version' => '1.5',
-        'timestamp' => 1625098518,
-        'count' => 15,
+        'timestamp' => 1625634825,
+        'count' => 17,
         'index' => [
             '' => [
                 'key' => '',
                 'storage_key' => '',
                 'template' => NULL,
-                'storage_timestamp' => 1625098474,
+                'storage_timestamp' => 1625632053,
                 'children' => [
                     '1.dmd-exhibitions' => 1625098503,
                     '08.capstone' => 1625097211,
                     '09.themes' => 1625097211,
+                    '10.forms' => 1625632053,
                     'imageFolder' => 1625097211
                 ],
-                'checksum' => '713a7c450de14f4ff2ad0c2e4008fcfe'
+                'checksum' => '2c2f80c8f10b8188ce2aafa8a009ae00'
             ],
             '1.dmd-exhibitions' => [
                 'key' => 'dmd-exhibitions',
@@ -198,6 +199,33 @@ return [
                     ]
                 ],
                 'checksum' => 'b90c3b5018169c7ea9e305c834fcdf3e'
+            ],
+            '10.forms' => [
+                'key' => 'forms',
+                'storage_key' => '10.forms',
+                'template' => 'blog',
+                'storage_timestamp' => 1625634801,
+                'markdown' => [
+                    '' => [
+                        'blog' => 1625634592
+                    ]
+                ],
+                'children' => [
+                    'testing' => 1625634802
+                ],
+                'checksum' => 'a00d3e546199b017aaa2b55aa7531e2e'
+            ],
+            '10.forms/testing' => [
+                'key' => 'forms/testing',
+                'storage_key' => '10.forms/testing',
+                'template' => 'item',
+                'storage_timestamp' => 1625634802,
+                'markdown' => [
+                    '' => [
+                        'item' => 1625634802
+                    ]
+                ],
+                'checksum' => '3ddc3ce79f4c57335fd0372f1d17434c'
             ],
             'imageFolder' => [
                 'key' => 'imagefolder',

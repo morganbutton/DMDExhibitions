@@ -1,0 +1,23 @@
+1625632499
+C:39:"Grav\Common\Flex\Types\Pages\PageObject":1214:{a:4:{s:4:"type";s:5:"pages";s:3:"key";s:31:"capstone/dmd400/dmd400-fall2019";s:8:"elements";a:4:{s:4:"root";b:0;s:6:"header";a:3:{s:5:"title";s:15:"DMD400:Fall2019";s:7:"content";a:5:{s:5:"items";a:1:{i:0;s:14:"@self.children";}s:5:"limit";i:5000;s:5:"order";a:2:{s:2:"by";s:4:"date";s:3:"dir";s:4:"desc";}s:10:"pagination";b:1;s:20:"url_taxonomy_filters";b:1;}s:8:"taxonomy";a:2:{s:3:"tag";a:2:{i:0;s:6:"dmd400";i:1;s:8:"fall2019";}s:4:"type";a:2:{i:0;s:10:"exhibition";i:1;s:8:"capstone";}}}s:11:"frontmatter";s:248:"title: "DMD400:Fall2019"
+content:
+  items:
+    - "@self.children"
+  limit: 5000
+  order:
+    by: date
+    dir: desc
+  pagination: true
+  url_taxonomy_filters: true
+taxonomy:
+  tag:
+    - dmd400
+    - fall2019
+  type:
+    - exhibition
+    - capstone";s:8:"markdown";s:109:"![DMD400:Fall2019](../../../imagefolder/capstoneFall2019.png?lightbox&resize=400)
+
+===
+
+###DMD400 : Fall2019
+";}s:7:"storage";a:6:{s:3:"key";s:31:"capstone/dmd400/dmd400-fall2019";s:11:"storage_key";s:37:"08.capstone/02.dmd400/dmd400-fall2019";s:8:"template";s:4:"blog";s:17:"storage_timestamp";i:1625097211;s:8:"markdown";a:1:{s:0:"";a:1:{s:4:"blog";i:1624426843;}}s:8:"checksum";s:32:"9ac24d962ead8370ea3b5f3e139c8c72";}}}
