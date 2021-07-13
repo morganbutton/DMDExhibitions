@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1626145431,
-    'checksum' => '56e5bdb03cd1e55632ea0e86d6ce871d',
+    'timestamp' => 1626146936,
+    'checksum' => '98469892571b45564d5b5197175c3098',
     'files' => [
         'user/config' => [
             'media' => [
@@ -11,7 +11,7 @@ return [
             ],
             'plugins/form' => [
                 'file' => 'user/config/plugins/form.yaml',
-                'modified' => 1626145043
+                'modified' => 1626146928
             ],
             'security' => [
                 'file' => 'user/config/security.yaml',
@@ -79,7 +79,7 @@ return [
             ],
             'plugins/form' => [
                 'file' => 'user/plugins/form/form.yaml',
-                'modified' => 1626145426
+                'modified' => 1626146614
             ],
             'plugins/login' => [
                 'file' => 'user/plugins/login/login.yaml',
@@ -298,9 +298,10 @@ return [
                     'destination' => 'self@',
                     'avoid_overwriting' => false,
                     'random_name' => false,
-                    'filesize' => 0,
+                    'filesize' => '512MB',
                     'accept' => [
-                        0 => 'image/*'
+                        0 => 'image/*',
+                        1 => 'video/*'
                     ]
                 ],
                 'recaptcha' => [

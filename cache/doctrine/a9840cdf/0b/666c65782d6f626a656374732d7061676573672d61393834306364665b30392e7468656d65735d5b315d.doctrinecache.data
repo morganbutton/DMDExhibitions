@@ -1,0 +1,15 @@
+1626147537
+C:39:"Grav\Common\Flex\Types\Pages\PageObject":966:{a:4:{s:4:"type";s:5:"pages";s:3:"key";s:6:"themes";s:8:"elements";a:4:{s:4:"root";b:0;s:6:"header";a:2:{s:5:"title";s:6:"Themes";s:7:"content";a:5:{s:5:"items";a:1:{i:0;s:14:"@self.children";}s:5:"limit";i:5000;s:5:"order";a:2:{s:2:"by";s:4:"date";s:3:"dir";s:4:"desc";}s:10:"pagination";b:1;s:20:"url_taxonomy_filters";b:1;}}s:11:"frontmatter";s:152:"title: Themes
+content:
+  items:
+    - "@self.children"
+  limit: 5000
+  order:
+    by: date
+    dir: desc
+  pagination: true
+  url_taxonomy_filters: true";s:8:"markdown";s:114:"![THEME PROJECT EXHIBITIONS](../../imagefolder/cyborgs.jpg?lightbox&resize=400)
+
+===
+###THEME PROJECT EXHIBITIONS
+";}s:7:"storage";a:7:{s:3:"key";s:6:"themes";s:11:"storage_key";s:9:"09.themes";s:8:"template";s:4:"blog";s:17:"storage_timestamp";i:1625097211;s:8:"markdown";a:1:{s:0:"";a:1:{s:4:"blog";i:1624426791;}}s:8:"children";a:2:{s:10:"01.cyborgs";b:0;s:10:"02.futures";b:0;}s:8:"checksum";s:32:"657987ef817509acdfb4d560131a653e";}}}

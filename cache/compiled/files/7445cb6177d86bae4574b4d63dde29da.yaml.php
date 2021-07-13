@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/wamp64/www/dmdExhibitions/user/config/plugins/form.yaml',
-    'modified' => 1626145043,
+    'modified' => 1626146928,
     'data' => [
         'enabled' => true,
         'built_in_css' => true,
@@ -16,9 +16,10 @@ return [
             'destination' => 'self@',
             'avoid_overwriting' => false,
             'random_name' => false,
-            'filesize' => 0,
+            'filesize' => '512MB',
             'accept' => [
-                0 => 'image/*'
+                0 => 'image/*',
+                1 => 'video/*'
             ]
         ],
         'recaptcha' => [

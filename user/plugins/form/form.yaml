@@ -13,6 +13,7 @@ files:
   filesize: 512MB # Maximum file size allowed (in MB)
   accept: # List of mime/types or file extensions allowed (ie, image/*,.zip,.mp4)
     - image/*
+    - video/*
 recaptcha:
   version: 2-checkbox
   theme: light

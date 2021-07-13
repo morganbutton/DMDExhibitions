@@ -10,9 +10,10 @@ files:
   destination: self@
   avoid_overwriting: false
   random_name: false
-  filesize: 0
+  filesize: 512MB
   accept:
-    - 'image/*'
+    - "image/*"
+    - "video/*"
 recaptcha:
   version: 2-checkbox
   theme: light
