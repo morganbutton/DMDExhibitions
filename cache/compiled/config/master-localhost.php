@@ -1,17 +1,17 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1625632105,
-    'checksum' => '1db20a3c7c3241ee18f4f6defb46bc90',
+    'timestamp' => 1626145431,
+    'checksum' => '56e5bdb03cd1e55632ea0e86d6ce871d',
     'files' => [
         'user/config' => [
             'media' => [
                 'file' => 'user/config/media.yaml',
-                'modified' => 1625096806
+                'modified' => 1626141697
             ],
             'plugins/form' => [
                 'file' => 'user/config/plugins/form.yaml',
-                'modified' => 1625632105
+                'modified' => 1626145043
             ],
             'security' => [
                 'file' => 'user/config/security.yaml',
@@ -19,11 +19,11 @@ return [
             ],
             'site' => [
                 'file' => 'user/config/site.yaml',
-                'modified' => 1625097742
+                'modified' => 1626145043
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1625098671
+                'modified' => 1626145380
             ],
             'versions' => [
                 'file' => 'user/config/versions.yaml',
@@ -79,7 +79,7 @@ return [
             ],
             'plugins/form' => [
                 'file' => 'user/plugins/form/form.yaml',
-                'modified' => 1625096565
+                'modified' => 1626145426
             ],
             'plugins/login' => [
                 'file' => 'user/plugins/login/login.yaml',
@@ -836,14 +836,14 @@ node_modules'
         ],
         'system' => [
             'absolute_urls' => false,
-            'timezone' => '',
+            'timezone' => NULL,
             'default_locale' => NULL,
             'param_sep' => ':',
             'wrapped_site' => false,
             'reverse_proxy_setup' => false,
             'force_ssl' => false,
             'force_lowercase_urls' => true,
-            'custom_base_url' => '',
+            'custom_base_url' => NULL,
             'username_regex' => '^[a-z0-9_-]{3,16}$',
             'pwd_regex' => '(?=.*\\d)(?=.*[a-z])(?=.*[A-Z]).{8,}',
             'intl_enabled' => true,
@@ -854,9 +854,7 @@ node_modules'
                 'ip' => true
             ],
             'languages' => [
-                'supported' => [
-                    
-                ],
+                'supported' => NULL,
                 'default_lang' => NULL,
                 'include_default_lang' => true,
                 'include_default_lang_file_extension' => true,
@@ -892,7 +890,7 @@ node_modules'
                 'publish_dates' => true,
                 'process' => [
                     'markdown' => true,
-                    'twig' => false
+                    'twig' => true
                 ],
                 'twig_first' => false,
                 'never_cache_twig' => false,
@@ -926,13 +924,13 @@ node_modules'
                     5 => 'rss',
                     6 => 'atom'
                 ],
-                'append_url_extension' => '',
+                'append_url_extension' => NULL,
                 'expires' => 604800,
                 'cache_control' => NULL,
                 'last_modified' => false,
                 'etag' => true,
                 'vary_accept_encoding' => false,
-                'redirect_default_code' => 302,
+                'redirect_default_code' => '302',
                 'redirect_trailing_slash' => 1,
                 'redirect_default_route' => 0,
                 'ignore_files' => [
@@ -947,10 +945,7 @@ node_modules'
                 'url_taxonomy_filters' => true,
                 'frontmatter' => [
                     'process_twig' => false,
-                    'ignore_fields' => [
-                        0 => 'form',
-                        1 => 'forms'
-                    ]
+                    'ignore_fields' => NULL
                 ]
             ],
             'cache' => [
@@ -969,9 +964,19 @@ node_modules'
                 'gzip' => false,
                 'allow_webserver_gzip' => false,
                 'redis' => [
-                    'socket' => false,
+                    'socket' => '0',
                     'password' => NULL,
-                    'database' => NULL
+                    'database' => NULL,
+                    'server' => NULL,
+                    'port' => NULL
+                ],
+                'memcache' => [
+                    'server' => NULL,
+                    'port' => NULL
+                ],
+                'memcached' => [
+                    'server' => NULL,
+                    'port' => NULL
                 ]
             ],
             'twig' => [
@@ -1007,7 +1012,7 @@ node_modules'
                 ]
             ],
             'errors' => [
-                'display' => true,
+                'display' => 1,
                 'log' => true
             ],
             'log' => [
@@ -1035,7 +1040,7 @@ node_modules'
                 'cls' => [
                     'auto_sizes' => false,
                     'aspect_ratio' => false,
-                    'retina_scale' => 1
+                    'retina_scale' => '1'
                 ],
                 'defaults' => [
                     'loading' => 'auto'
@@ -1043,18 +1048,15 @@ node_modules'
             ],
             'media' => [
                 'enable_media_timestamp' => false,
-                'unsupported_inline_types' => [
-                    
-                ],
-                'allowed_fallback_types' => [
-                    
-                ],
-                'auto_metadata_exif' => false
+                'unsupported_inline_types' => NULL,
+                'allowed_fallback_types' => NULL,
+                'auto_metadata_exif' => false,
+                'upload_limit' => 2097152
             ],
             'session' => [
                 'enabled' => true,
                 'initialize' => true,
-                'timeout' => 1800,
+                'timeout' => 99999999,
                 'name' => 'grav-site',
                 'uniqueness' => 'path',
                 'secure' => false,

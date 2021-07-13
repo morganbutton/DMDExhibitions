@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledMarkdownFile',
     'filename' => 'C:/wamp64/www/dmdExhibitions/user/pages/09.themes/01.cyborgs/dmd300-spring2020/blog.md',
-    'modified' => 1624426300,
+    'modified' => 1626145043,
     'data' => [
         'header' => [
             'title' => 'DMD300:Spring2020',

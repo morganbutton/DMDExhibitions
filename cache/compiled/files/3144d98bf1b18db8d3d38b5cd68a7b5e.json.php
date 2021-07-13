@@ -2,37 +2,37 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledJsonFile',
     'filename' => 'C:/wamp64/www/dmdExhibitions/user/data/flex/indexes/pages.json',
-    'modified' => 1625634825,
+    'modified' => 1626145374,
     'data' => [
         'version' => '1.5',
-        'timestamp' => 1625634825,
+        'timestamp' => 1626145374,
         'count' => 17,
         'index' => [
             '' => [
                 'key' => '',
                 'storage_key' => '',
                 'template' => NULL,
-                'storage_timestamp' => 1625632053,
+                'storage_timestamp' => 1626145043,
                 'children' => [
-                    '1.dmd-exhibitions' => 1625098503,
+                    '1.dmd-exhibitions' => 1626145043,
                     '08.capstone' => 1625097211,
                     '09.themes' => 1625097211,
-                    '10.forms' => 1625632053,
+                    '10.forms' => 1626145189,
                     'imageFolder' => 1625097211
                 ],
-                'checksum' => '2c2f80c8f10b8188ce2aafa8a009ae00'
+                'checksum' => 'e0fe0b97a89049127ebea40fd48bcfef'
             ],
             '1.dmd-exhibitions' => [
                 'key' => 'dmd-exhibitions',
                 'storage_key' => '1.dmd-exhibitions',
                 'template' => 'blog',
-                'storage_timestamp' => 1625098503,
+                'storage_timestamp' => 1626145043,
                 'markdown' => [
                     '' => [
-                        'blog' => 1625098503
+                        'blog' => 1626145043
                     ]
                 ],
-                'checksum' => '8c800f458321cdb0a6f3745bbb6edd59'
+                'checksum' => '87f8e1b27aefa4e17ac26d9afc05513b'
             ],
             '08.capstone' => [
                 'key' => 'capstone',
@@ -69,13 +69,13 @@ return [
                 'key' => 'capstone/dmd300/dmd300-spring2020',
                 'storage_key' => '08.capstone/01.dmd300/dmd300-spring2020',
                 'template' => 'blog',
-                'storage_timestamp' => 1625097211,
+                'storage_timestamp' => 1626145043,
                 'markdown' => [
                     '' => [
-                        'blog' => 1624426822
+                        'blog' => 1626145043
                     ]
                 ],
-                'checksum' => 'e0590e415d4e47aa3737c4179bfe29df'
+                'checksum' => 'c0c62051e4f880a418d34a28b17457ce'
             ],
             '08.capstone/02.dmd400' => [
                 'key' => 'capstone/dmd400',
@@ -97,25 +97,25 @@ return [
                 'key' => 'capstone/dmd400/dmd400-fall2019',
                 'storage_key' => '08.capstone/02.dmd400/dmd400-fall2019',
                 'template' => 'blog',
-                'storage_timestamp' => 1625097211,
+                'storage_timestamp' => 1626145043,
                 'markdown' => [
                     '' => [
-                        'blog' => 1624426843
+                        'blog' => 1626145043
                     ]
                 ],
-                'checksum' => '9ac24d962ead8370ea3b5f3e139c8c72'
+                'checksum' => '7202f7c65b2e01d3d039c3bdb08fcca3'
             ],
             '08.capstone/02.dmd400/dmd400-fall2020' => [
                 'key' => 'capstone/dmd400/dmd400-fall2020',
                 'storage_key' => '08.capstone/02.dmd400/dmd400-fall2020',
                 'template' => 'blog',
-                'storage_timestamp' => 1625097211,
+                'storage_timestamp' => 1626145043,
                 'markdown' => [
                     '' => [
-                        'blog' => 1624426849
+                        'blog' => 1626145043
                     ]
                 ],
-                'checksum' => '268af3b9fbcb5d6b00b80f95c7ecc742'
+                'checksum' => 'de05d2c45636cdbb80692909ebb632dc'
             ],
             '09.themes' => [
                 'key' => 'themes',
@@ -137,95 +137,95 @@ return [
                 'key' => 'themes/cyborgs',
                 'storage_key' => '09.themes/01.cyborgs',
                 'template' => 'blog',
-                'storage_timestamp' => 1625097211,
+                'storage_timestamp' => 1626145043,
                 'markdown' => [
                     '' => [
-                        'blog' => 1624426361
+                        'blog' => 1626145043
                     ]
                 ],
                 'children' => [
-                    'dmd300-fall2020' => 1625097211,
-                    'dmd300-spring2020' => 1625097211
+                    'dmd300-fall2020' => 1626145043,
+                    'dmd300-spring2020' => 1626145043
                 ],
-                'checksum' => '1a29775285d6d6c7193e3b808ff6769c'
+                'checksum' => '0d21bba6a221cfc9164bf72b5f27c467'
             ],
             '09.themes/01.cyborgs/dmd300-fall2020' => [
                 'key' => 'themes/cyborgs/dmd300-fall2020',
                 'storage_key' => '09.themes/01.cyborgs/dmd300-fall2020',
                 'template' => 'blog',
-                'storage_timestamp' => 1625097211,
+                'storage_timestamp' => 1626145043,
                 'markdown' => [
                     '' => [
-                        'blog' => 1624422561
+                        'blog' => 1626145043
                     ]
                 ],
-                'checksum' => '5895ba05cc2611ee07de9c9fc796a9c3'
+                'checksum' => 'e7260df9632a12cd0b36d69f783280c7'
             ],
             '09.themes/01.cyborgs/dmd300-spring2020' => [
                 'key' => 'themes/cyborgs/dmd300-spring2020',
                 'storage_key' => '09.themes/01.cyborgs/dmd300-spring2020',
                 'template' => 'blog',
-                'storage_timestamp' => 1625097211,
+                'storage_timestamp' => 1626145043,
                 'markdown' => [
                     '' => [
-                        'blog' => 1624426300
+                        'blog' => 1626145043
                     ]
                 ],
-                'checksum' => '795fef24e94c5736a501ae18be834dc4'
+                'checksum' => 'e76dd20d3af7499d190e51fb31059a70'
             ],
             '09.themes/02.futures' => [
                 'key' => 'themes/futures',
                 'storage_key' => '09.themes/02.futures',
                 'template' => 'blog',
-                'storage_timestamp' => 1625097211,
+                'storage_timestamp' => 1626145043,
                 'markdown' => [
                     '' => [
-                        'blog' => 1624426372
+                        'blog' => 1626145043
                     ]
                 ],
                 'children' => [
-                    'dmd300-fall2019' => 1625097211
+                    'dmd300-fall2019' => 1626145043
                 ],
-                'checksum' => '093db500f1a1e1e93ba7b0e846cd67b5'
+                'checksum' => 'f3fc5e2255c6eb8af305353ce2c8942a'
             ],
             '09.themes/02.futures/dmd300-fall2019' => [
                 'key' => 'themes/futures/dmd300-fall2019',
                 'storage_key' => '09.themes/02.futures/dmd300-fall2019',
                 'template' => 'blog',
-                'storage_timestamp' => 1625097211,
+                'storage_timestamp' => 1626145043,
                 'markdown' => [
                     '' => [
-                        'blog' => 1624422685
+                        'blog' => 1626145043
                     ]
                 ],
-                'checksum' => 'b90c3b5018169c7ea9e305c834fcdf3e'
+                'checksum' => '9f4f5ad760c53155636b8c4e605e1b02'
             ],
             '10.forms' => [
                 'key' => 'forms',
                 'storage_key' => '10.forms',
                 'template' => 'blog',
-                'storage_timestamp' => 1625634801,
+                'storage_timestamp' => 1626145189,
                 'markdown' => [
                     '' => [
-                        'blog' => 1625634592
+                        'blog' => 1626145189
                     ]
                 ],
                 'children' => [
-                    'testing' => 1625634802
+                    'testing' => 1626145043
                 ],
-                'checksum' => 'a00d3e546199b017aaa2b55aa7531e2e'
+                'checksum' => '8f7bbb78fd6a51619aff7ae84a1ff4c2'
             ],
             '10.forms/testing' => [
                 'key' => 'forms/testing',
                 'storage_key' => '10.forms/testing',
                 'template' => 'item',
-                'storage_timestamp' => 1625634802,
+                'storage_timestamp' => 1626145043,
                 'markdown' => [
                     '' => [
-                        'item' => 1625634802
+                        'item' => 1626145043
                     ]
                 ],
-                'checksum' => '3ddc3ce79f4c57335fd0372f1d17434c'
+                'checksum' => '3ecd2a375fdef8edae7e00fb7097f47d'
             ],
             'imageFolder' => [
                 'key' => 'imagefolder',
