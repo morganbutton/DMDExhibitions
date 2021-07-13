@@ -1198,13 +1198,13 @@ class Form implements FormInterface, ArrayAccess
 
         $system_filesize = 0;
         $form_filesize = $config->get('plugins.form.files.filesize', 0);
-        $upload_limit = (int) Utils::getUploadLimit();
-
+        
+        $upload_limit = Utils::getUploadLimit();
         if ($upload_limit > 0) {
             $system_filesize = intval($upload_limit / static::BYTES_TO_MB);
         }
 
-        if ($form_filesize > $system_filesize || $form_filesize == 0) {
+        if ($form_filesize > $system_filesize || $form_filesize === 0) {
             $form_filesize = $system_filesize;
         }
 
@@ -1214,7 +1214,6 @@ class Form implements FormInterface, ArrayAccess
 
         return $form_filesize;
     }
-
     /**
      * @param callable $callable
      * @return void
