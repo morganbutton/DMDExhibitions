@@ -57,7 +57,7 @@ class __TwigTemplate_e036f184a138a9021d1554296ee186b1bc2b4a099d75b99815747a1ebee
         $context["page_can_upload"] = (($context["exists"] ?? null) || (((($context["type"] ?? null) == "page") &&  !($context["exists"] ?? null)) &&  !((is_string($__internal_f607aeef2c31a95a7bf963452dff024ffaeb6aafbe4603f9ca3bec57be8633f4 = $this->getAttribute(($context["field"] ?? null), "destination", [])) && is_string($__internal_62824350bc4502ee19dbc2e99fc6bdd3bd90e7d8dd6e72f42c35efd048542144 = "@self") && ('' === $__internal_62824350bc4502ee19dbc2e99fc6bdd3bd90e7d8dd6e72f42c35efd048542144 || 0 === strpos($__internal_f607aeef2c31a95a7bf963452dff024ffaeb6aafbe4603f9ca3bec57be8633f4, $__internal_62824350bc4502ee19dbc2e99fc6bdd3bd90e7d8dd6e72f42c35efd048542144))) || (is_string($__internal_1cfccaec8dd2e8578ccb026fbe7f2e7e29ac2ed5deb976639c5fc99a6ea8583b = $this->getAttribute(($context["field"] ?? null), "destination", [])) && is_string($__internal_68aa442c1d43d3410ea8f958ba9090f3eaa9a76f8de8fc9be4d6c7389ba28002 = "self@") && ('' === $__internal_68aa442c1d43d3410ea8f958ba9090f3eaa9a76f8de8fc9be4d6c7389ba28002 || 0 === strpos($__internal_1cfccaec8dd2e8578ccb026fbe7f2e7e29ac2ed5deb976639c5fc99a6ea8583b, $__internal_68aa442c1d43d3410ea8f958ba9090f3eaa9a76f8de8fc9be4d6c7389ba28002))))));
         // line 62
         echo "    ";
-        $context["max_filesize"] = (((($this->getAttribute(($context["field"] ?? null), "filesize", []) > ($context["form_max_filesize"] ?? null)) || ($this->getAttribute(($context["field"] ?? null), "filesize", []) == 0))) ? (($context["form_max_filesize"] ?? null)) : ($this->getAttribute(($context["field"] ?? null), "filesize", [])));
+        $context["max_filesize"] = (((($this->getAttribute(($context["field"] ?? null), "filesize", []) > ($context["form_max_filesize"] ?? null)) || ($this->getAttribute(($context["field"] ?? null), "filesize", []) == 512))) ? (($context["form_max_filesize"] ?? null)) : ($this->getAttribute(($context["field"] ?? null), "filesize", [])));
         // line 63
         echo "
     ";
@@ -469,7 +469,7 @@ class __TwigTemplate_e036f184a138a9021d1554296ee186b1bc2b4a099d75b99815747a1ebee
 
 {% block input %}
     {% set page_can_upload = exists or (type == 'page' and not exists and not (field.destination starts with '@self' or field.destination starts with 'self@')) %}
-    {% set max_filesize = (field.filesize > form_max_filesize or field.filesize == 0) ? form_max_filesize : field.filesize %}
+    {% set max_filesize = (field.filesize > form_max_filesize or field.filesize == 512) ? form_max_filesize : field.filesize %}
 
     {% block prepend %}{% endblock %}
     {% set settings = {name: field.name, paramName: (scope ~ field.name)|fieldName ~ (files.multiple ? '[]' : ''), limit: limit, filesize: max_filesize, accept: files.accept, resolution: files.resolution, resizeWidth: files.resizeWidth, resizeHeight: files.resizeHeight, resizeQuality: files.resizeQuality } %}
