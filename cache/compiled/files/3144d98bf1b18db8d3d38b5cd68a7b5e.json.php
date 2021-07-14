@@ -2,10 +2,10 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledJsonFile',
     'filename' => 'C:/wamp64/www/dmdExhibitions/user/data/flex/indexes/pages.json',
-    'modified' => 1626145374,
+    'modified' => 1626229638,
     'data' => [
         'version' => '1.5',
-        'timestamp' => 1626145374,
+        'timestamp' => 1626229638,
         'count' => 17,
         'index' => [
             '' => [
@@ -204,16 +204,16 @@ return [
                 'key' => 'forms',
                 'storage_key' => '10.forms',
                 'template' => 'blog',
-                'storage_timestamp' => 1626145189,
+                'storage_timestamp' => 1626228890,
                 'markdown' => [
                     '' => [
-                        'blog' => 1626145189
+                        'blog' => 1626228890
                     ]
                 ],
                 'children' => [
                     'testing' => 1626145043
                 ],
-                'checksum' => '8f7bbb78fd6a51619aff7ae84a1ff4c2'
+                'checksum' => 'd0415373f7a573c56c8478704a86e3d7'
             ],
             '10.forms/testing' => [
                 'key' => 'forms/testing',

@@ -10,9 +10,6 @@ pagefrontmatter:
   title: "My new Blog post"
   taxonomy:
     category: blog
-    tag:
-      - student
-      - formSubmit
 form:
   name: blog.md
   refresh_prevention: true
@@ -27,8 +24,11 @@ form:
     - name: taxonomy.tag
       label: "Tags (comma separated)"
       type: text
-    - name: taxonomy.exhibitionType
-      label: "exhibition type (comma separated)"
+    - name: taxonomy.theme
+      label: "theme type (comma separated)"
+      type: text
+    - name: taxonomy.type
+      label: " type (comma separated)"
       type: text
     - name: content
       label: "Post Content"
@@ -59,9 +59,6 @@ form:
   process:
     - add_page: true
     - redirect: /forms
-process:
-  markdown: true
-  twig: true
 ---
 
 ## New Blog Post
