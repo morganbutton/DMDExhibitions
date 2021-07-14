@@ -1,17 +1,20 @@
 ---
-title: Themes
+title: "DMD300:Fall2019"
 content:
   items:
-    - "@self.children"
-  limit: 5000
-  order:
-    by: date
-    dir: desc
-  pagination: true
-  url_taxonomy_filters: true
+    - "@taxonomy":
+        tag:
+          - dmd300
+          - fall2019
+        theme:
+          - futures
+        type:
+          - exhibition
+          - theme
 ---
 
-![THEME PROJECT EXHIBITIONS](../../imagefolder/cyborgs.jpg?lightbox&resize=400)
+![FUTURES PROJECT EXHIBITIONS](../../../imagefolder/futuresFall2019.png?lightbox&resize=400)
 
 ===
-###THEME PROJECT EXHIBITIONS
+
+###FUTURES PROJECT EXHIBITIONS
