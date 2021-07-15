@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/wamp64/www/dmdExhibitions/user/config/system.yaml',
-    'modified' => 1626145380,
+    'modified' => 1626319007,
     'data' => [
         'absolute_urls' => false,
         'timezone' => NULL,

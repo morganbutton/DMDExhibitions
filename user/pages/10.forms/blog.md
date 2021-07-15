@@ -6,12 +6,13 @@ pageconfig:
   include_username: true
   overwrite_mode: true
 pagefrontmatter:
-  template: blog
+  template: testForm
   title: "My new Blog post"
   taxonomy:
     category: blog
 form:
-  name: blog.md
+  name: testForm.md
+  template:
   refresh_prevention: true
   ajax: true
   fields:

@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledMarkdownFile',
     'filename' => 'C:/wamp64/www/dmdExhibitions/user/pages/09.themes/blog.md',
-    'modified' => 1624426791,
+    'modified' => 1626233918,
     'data' => [
         'header' => [
             'title' => 'Themes',

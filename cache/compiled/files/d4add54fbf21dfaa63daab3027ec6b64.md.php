@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledMarkdownFile',
     'filename' => 'C:/wamp64/www/dmdExhibitions/user/pages/10.forms/blog.md',
-    'modified' => 1626228890,
+    'modified' => 1626317284,
     'data' => [
         'header' => [
             'title' => 'ajax-test-form',
@@ -13,18 +13,15 @@ return [
                 'overwrite_mode' => true
             ],
             'pagefrontmatter' => [
-                'template' => 'blog',
+                'template' => 'testForm',
                 'title' => 'My new Blog post',
                 'taxonomy' => [
-                    'category' => 'blog',
-                    'tag' => [
-                        0 => 'student',
-                        1 => 'formSubmit'
-                    ]
+                    'category' => 'blog'
                 ]
             ],
             'form' => [
-                'name' => 'blog.md',
+                'name' => 'testForm.md',
+                'template' => NULL,
                 'refresh_prevention' => true,
                 'ajax' => true,
                 'fields' => [
@@ -44,18 +41,23 @@ return [
                         'type' => 'text'
                     ],
                     3 => [
-                        'name' => 'taxonomy.exhibitionType',
-                        'label' => 'exhibition type (comma separated)',
+                        'name' => 'taxonomy.theme',
+                        'label' => 'theme type (comma separated)',
                         'type' => 'text'
                     ],
                     4 => [
+                        'name' => 'taxonomy.type',
+                        'label' => ' type (comma separated)',
+                        'type' => 'text'
+                    ],
+                    5 => [
                         'name' => 'content',
                         'label' => 'Post Content',
                         'type' => 'textarea',
                         'size' => 'long',
                         'classes' => 'editor'
                     ],
-                    5 => [
+                    6 => [
                         'name' => 'images',
                         'label' => 'Images to upload',
                         'type' => 'file',
@@ -64,7 +66,7 @@ return [
                             0 => 'image/*'
                         ]
                     ],
-                    6 => [
+                    7 => [
                         'name' => 'video',
                         'label' => 'videos to upload',
                         'type' => 'file',
@@ -73,7 +75,7 @@ return [
                             0 => 'video/*'
                         ]
                     ],
-                    7 => [
+                    8 => [
                         'name' => 'audio',
                         'label' => 'audio to upload',
                         'type' => 'file',
@@ -97,10 +99,6 @@ return [
                         'redirect' => '/forms'
                     ]
                 ]
-            ],
-            'process' => [
-                'markdown' => true,
-                'twig' => true
             ]
         ],
         'frontmatter' => 'title: ajax-test-form
@@ -110,15 +108,13 @@ pageconfig:
   include_username: true
   overwrite_mode: true
 pagefrontmatter:
-  template: blog
+  template: testForm
   title: "My new Blog post"
   taxonomy:
     category: blog
-    tag:
-      - student
-      - formSubmit
 form:
-  name: blog.md
+  name: testForm.md
+  template:
   refresh_prevention: true
   ajax: true
   fields:
@@ -131,8 +127,11 @@ form:
     - name: taxonomy.tag
       label: "Tags (comma separated)"
       type: text
-    - name: taxonomy.exhibitionType
-      label: "exhibition type (comma separated)"
+    - name: taxonomy.theme
+      label: "theme type (comma separated)"
+      type: text
+    - name: taxonomy.type
+      label: " type (comma separated)"
       type: text
     - name: content
       label: "Post Content"
@@ -162,10 +161,7 @@ form:
       value: Submit
   process:
     - add_page: true
-    - redirect: /forms
-process:
-  markdown: true
-  twig: true',
+    - redirect: /forms',
         'markdown' => '## New Blog Post
 
 Write your blog post:
