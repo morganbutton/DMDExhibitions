@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledMarkdownFile',
     'filename' => 'C:/wamp64/www/dmdExhibitions/user/pages/10.forms/blog.md',
-    'modified' => 1626317284,
+    'modified' => 1626731665,
     'data' => [
         'header' => [
             'title' => 'ajax-test-form',
@@ -67,13 +67,11 @@ return [
                         ]
                     ],
                     7 => [
-                        'name' => 'video',
+                        'name' => 'content',
                         'label' => 'videos to upload',
-                        'type' => 'file',
-                        'multiple' => true,
-                        'accept' => [
-                            0 => 'video/*'
-                        ]
+                        'type' => 'textarea',
+                        'size' => 'long',
+                        'classes' => 'editor'
                     ],
                     8 => [
                         'name' => 'audio',
@@ -144,12 +142,11 @@ form:
       multiple: true
       accept:
         - "image/*"
-    - name: video
+    - name: content
       label: "videos to upload"
-      type: file
-      multiple: true
-      accept:
-        - "video/*"
+      type: textarea
+      size: long
+      classes: editor
     - name: audio
       label: "audio to upload"
       type: file

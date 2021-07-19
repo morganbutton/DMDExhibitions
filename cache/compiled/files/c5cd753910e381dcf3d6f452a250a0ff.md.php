@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledMarkdownFile',
     'filename' => 'C:/wamp64/www/dmdExhibitions/user/pages/10.forms/motest/testForm.md',
-    'modified' => 1626318996,
+    'modified' => 1626320593,
     'data' => [
         'header' => [
             'title' => 'motest',
@@ -58,7 +58,7 @@ images:
 author: morgan
 video: {}
 audio: {}',
-        'markdown' => '![CYBORGS PROJECT EXHIBITIONS](user/pages/10.forms/motest/bubbles01.jpg?lightbox&resize=400)
+        'markdown' => '![CYBORGS PROJECT EXHIBITIONS](bubbles01.jpg?lightbox&resize=400)
 '
     ]
 ];

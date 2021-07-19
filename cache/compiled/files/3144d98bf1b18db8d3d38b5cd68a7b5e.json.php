@@ -2,11 +2,11 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledJsonFile',
     'filename' => 'C:/wamp64/www/dmdExhibitions/user/data/flex/indexes/pages.json',
-    'modified' => 1626318983,
+    'modified' => 1626731678,
     'data' => [
         'version' => '1.5',
-        'timestamp' => 1626318983,
-        'count' => 32,
+        'timestamp' => 1626731678,
+        'count' => 34,
         'index' => [
             '' => [
                 'key' => '',
@@ -204,10 +204,10 @@ return [
                 'key' => 'forms',
                 'storage_key' => '10.forms',
                 'template' => 'blog',
-                'storage_timestamp' => 1626318827,
+                'storage_timestamp' => 1626731665,
                 'markdown' => [
                     '' => [
-                        'blog' => 1626317284
+                        'blog' => 1626731665
                     ]
                 ],
                 'children' => [
@@ -216,7 +216,7 @@ return [
                     'cherry' => 1626236749,
                     'deletetwig' => 1626317721,
                     'moge' => 1626318684,
-                    'motest' => 1626318976,
+                    'motest' => 1626320593,
                     'my-new-page' => 1626318660,
                     'orange' => 1626236708,
                     'pear' => 1626236403,
@@ -226,9 +226,11 @@ return [
                     'testingitem' => 1626314920,
                     'testingitem2' => 1626314983,
                     'testingtaxonomy' => 1626233790,
-                    'twig' => 1626317753
+                    'testmd' => 1626320347,
+                    'twig' => 1626317753,
+                    'youtubeembed' => 1626731559
                 ],
-                'checksum' => '0f38fdacf4f0996788dce4bf29c8b486'
+                'checksum' => '2bc19c6d604b0a14d4c520f34c5542ef'
             ],
             '10.forms/admin' => [
                 'key' => 'forms/admin',
@@ -294,13 +296,13 @@ return [
                 'key' => 'forms/motest',
                 'storage_key' => '10.forms/motest',
                 'template' => 'testForm',
-                'storage_timestamp' => 1626318976,
+                'storage_timestamp' => 1626320593,
                 'markdown' => [
                     '' => [
-                        'testForm' => 1626318976
+                        'testForm' => 1626320593
                     ]
                 ],
-                'checksum' => '297319871b5676b3fb26b53a0c33a22f'
+                'checksum' => '1b01cebf748de2fc1e2ee29a221de32f'
             ],
             '10.forms/my-new-page' => [
                 'key' => 'forms/my-new-page',
@@ -410,6 +412,18 @@ return [
                 ],
                 'checksum' => '5f98c30cc1f2068dd7b4778515bfcc33'
             ],
+            '10.forms/testmd' => [
+                'key' => 'forms/testmd',
+                'storage_key' => '10.forms/testmd',
+                'template' => 'testForm',
+                'storage_timestamp' => 1626320347,
+                'markdown' => [
+                    '' => [
+                        'testForm' => 1626320347
+                    ]
+                ],
+                'checksum' => '756d833c86270329638295c7e4df6786'
+            ],
             '10.forms/twig' => [
                 'key' => 'forms/twig',
                 'storage_key' => '10.forms/twig',
@@ -421,6 +435,18 @@ return [
                     ]
                 ],
                 'checksum' => 'd29fac1f425e83b020c4ff27a1df00c4'
+            ],
+            '10.forms/youtubeembed' => [
+                'key' => 'forms/youtubeembed',
+                'storage_key' => '10.forms/youtubeembed',
+                'template' => 'testForm',
+                'storage_timestamp' => 1626731559,
+                'markdown' => [
+                    '' => [
+                        'testForm' => 1626731559
+                    ]
+                ],
+                'checksum' => '79117f4a0a4502e82ef1ecae32d19d0a'
             ],
             'imageFolder' => [
                 'key' => 'imagefolder',

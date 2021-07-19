@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1626319010,
-    'checksum' => 'a6ef4835bb16d996e77c8f85ee0eb18b',
+    'timestamp' => 1626731687,
+    'checksum' => '0aa4f7d6cf830059acaa96ebd5e88b2e',
     'files' => [
         'user/config' => [
             'media' => [
@@ -23,7 +23,7 @@ return [
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1626319007
+                'modified' => 1626731681
             ],
             'versions' => [
                 'file' => 'user/config/versions.yaml',
@@ -92,6 +92,10 @@ return [
             'plugins/problems' => [
                 'file' => 'user/plugins/problems/problems.yaml',
                 'modified' => 1625096581
+            ],
+            'plugins/youtube' => [
+                'file' => 'user/plugins/youtube/youtube.yaml',
+                'modified' => 1626731262
             ]
         ],
         'user/themes' => [
@@ -387,6 +391,32 @@ return [
             'problems' => [
                 'enabled' => true,
                 'built_in_css' => true
+            ],
+            'youtube' => [
+                'enabled' => true,
+                'built_in_css' => true,
+                'built_in_js' => false,
+                'add_editor_button' => true,
+                'player_parameters' => [
+                    'autoplay' => 0,
+                    'cc_load_policy' => 0,
+                    'color' => 'red',
+                    'controls' => 1,
+                    'disablekb' => 0,
+                    'enablejsapi' => 0,
+                    'fs' => 1,
+                    'hl' => '',
+                    'iv_load_policy' => 1,
+                    'loop' => 0,
+                    'modestbranding' => 0,
+                    'origin' => '',
+                    'playsinline' => 0,
+                    'rel' => 1,
+                    'showinfo' => 1,
+                    'vq' => 'default'
+                ],
+                'privacy_enhanced_mode' => false,
+                'lazy_load' => false
             ]
         ],
         'backups' => [

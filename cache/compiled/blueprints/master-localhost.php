@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledBlueprints',
-    'timestamp' => 1626319014,
-    'checksum' => '542b4adc02e3d3128808742b4020d96a',
+    'timestamp' => 1626731725,
+    'checksum' => '387527f25d626a2d8b5fca40a3b85b87',
     'files' => [
         'user/plugins/admin/blueprints/config' => [
             'media' => [
@@ -76,6 +76,10 @@ return [
             'plugins/problems' => [
                 'file' => 'user/plugins/problems/blueprints.yaml',
                 'modified' => 1625096581
+            ],
+            'plugins/youtube' => [
+                'file' => 'user/plugins/youtube/blueprints.yaml',
+                'modified' => 1626731262
             ]
         ],
         'user/themes' => [
@@ -5023,6 +5027,343 @@ return [
                 'name' => 'plugins.problems.built_in_css',
                 'validation' => 'strict'
             ],
+            'plugins.youtube' => [
+                'type' => '_root',
+                'form_field' => false,
+                'form' => [
+                    'validation' => 'strict'
+                ]
+            ],
+            'plugins.youtube.enabled' => [
+                'type' => 'toggle',
+                'label' => 'Plugin status',
+                'highlight' => 1,
+                'default' => 0,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.youtube.enabled',
+                'validation' => 'strict'
+            ],
+            'plugins.youtube.built_in_css' => [
+                'type' => 'toggle',
+                'label' => 'Use built in CSS',
+                'highlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.youtube.built_in_css',
+                'validation' => 'strict'
+            ],
+            'plugins.youtube.built_in_js' => [
+                'type' => 'toggle',
+                'label' => 'Use built in JS',
+                'highlight' => 0,
+                'default' => 0,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.youtube.built_in_js',
+                'validation' => 'strict'
+            ],
+            'plugins.youtube.add_editor_button' => [
+                'type' => 'toggle',
+                'label' => 'Add editor button',
+                'highlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.youtube.add_editor_button',
+                'validation' => 'strict'
+            ],
+            'plugins.youtube.privacy_enhanced_mode' => [
+                'type' => 'toggle',
+                'label' => 'Privacy-enhanced mode',
+                'highlight' => 0,
+                'default' => 0,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.youtube.privacy_enhanced_mode',
+                'validation' => 'strict'
+            ],
+            'plugins.youtube.lazy_load' => [
+                'type' => 'toggle',
+                'label' => 'Lazy load iframes',
+                'hightlight' => 0,
+                'default' => 0,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.youtube.lazy_load',
+                'validation' => 'strict'
+            ],
+            'plugins.youtube.player_parameters' => [
+                'type' => '_parent',
+                'name' => 'plugins.youtube.player_parameters',
+                'form_field' => false
+            ],
+            'plugins.youtube.player_parameters.vq' => [
+                'type' => 'select',
+                'size' => 'medium',
+                'label' => 'Preferred video quality',
+                'default' => 'default',
+                'options' => [
+                    'default' => 'Default',
+                    'small' => 'Small',
+                    'medium' => 'Medium',
+                    'large' => 'Large',
+                    'highres' => 'High resolution',
+                    'hd1080' => 'High definition (1080)',
+                    'hd720' => 'High definition (720)'
+                ],
+                'validate' => [
+                    'type' => 'string'
+                ],
+                'name' => 'plugins.youtube.player_parameters.vq',
+                'validation' => 'strict'
+            ],
+            'plugins.youtube.player_parameters.autoplay' => [
+                'type' => 'toggle',
+                'label' => 'Autoplay',
+                'highlight' => 0,
+                'default' => 0,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'int'
+                ],
+                'name' => 'plugins.youtube.player_parameters.autoplay',
+                'validation' => 'strict'
+            ],
+            'plugins.youtube.player_parameters.loop' => [
+                'type' => 'toggle',
+                'label' => 'Loop',
+                'highlight' => 0,
+                'default' => 0,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'int'
+                ],
+                'name' => 'plugins.youtube.player_parameters.loop',
+                'validation' => 'strict'
+            ],
+            'plugins.youtube.player_parameters.showinfo' => [
+                'type' => 'toggle',
+                'label' => 'Show information',
+                'highlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'int'
+                ],
+                'name' => 'plugins.youtube.player_parameters.showinfo',
+                'validation' => 'strict'
+            ],
+            'plugins.youtube.player_parameters.rel' => [
+                'type' => 'toggle',
+                'label' => 'Related videos',
+                'highlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'int'
+                ],
+                'name' => 'plugins.youtube.player_parameters.rel',
+                'validation' => 'strict'
+            ],
+            'plugins.youtube.player_parameters.modestbranding' => [
+                'type' => 'toggle',
+                'label' => 'Modest branding',
+                'highlight' => 0,
+                'default' => 0,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'int'
+                ],
+                'name' => 'plugins.youtube.player_parameters.modestbranding',
+                'validation' => 'strict'
+            ],
+            'plugins.youtube.player_parameters.color' => [
+                'type' => 'select',
+                'size' => 'medium',
+                'label' => 'Color',
+                'default' => 'red',
+                'options' => [
+                    'red' => 'Red',
+                    'white' => 'White'
+                ],
+                'validate' => [
+                    'type' => 'string'
+                ],
+                'name' => 'plugins.youtube.player_parameters.color',
+                'validation' => 'strict'
+            ],
+            'plugins.youtube.player_parameters.cc_load_policy' => [
+                'type' => 'toggle',
+                'label' => 'Show closed captions by default',
+                'highlight' => 0,
+                'default' => 0,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'int'
+                ],
+                'name' => 'plugins.youtube.player_parameters.cc_load_policy',
+                'validation' => 'strict'
+            ],
+            'plugins.youtube.player_parameters.iv_load_policy' => [
+                'type' => 'select',
+                'size' => 'medium',
+                'label' => 'Video annotations',
+                'default' => 1,
+                'options' => [
+                    1 => 'Displayed by default',
+                    3 => 'Hidden by default'
+                ],
+                'validate' => [
+                    'type' => 'int'
+                ],
+                'name' => 'plugins.youtube.player_parameters.iv_load_policy',
+                'validation' => 'strict'
+            ],
+            'plugins.youtube.player_parameters.controls' => [
+                'type' => 'toggle',
+                'label' => 'Controls',
+                'highlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'int'
+                ],
+                'name' => 'plugins.youtube.player_parameters.controls',
+                'validation' => 'strict'
+            ],
+            'plugins.youtube.player_parameters.disablekb' => [
+                'type' => 'toggle',
+                'label' => 'Keyboard controls',
+                'highlight' => 0,
+                'default' => 0,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'int'
+                ],
+                'name' => 'plugins.youtube.player_parameters.disablekb',
+                'validation' => 'strict'
+            ],
+            'plugins.youtube.player_parameters.fs' => [
+                'type' => 'toggle',
+                'label' => 'Fullscreen button',
+                'highlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'int'
+                ],
+                'name' => 'plugins.youtube.player_parameters.fs',
+                'validation' => 'strict'
+            ],
+            'plugins.youtube.player_parameters.hl' => [
+                'type' => 'text',
+                'label' => 'Language',
+                'default' => '',
+                'validate' => [
+                    'type' => 'string'
+                ],
+                'name' => 'plugins.youtube.player_parameters.hl',
+                'validation' => 'strict'
+            ],
+            'plugins.youtube.player_parameters.enablejsapi' => [
+                'type' => 'toggle',
+                'label' => 'JavaScript API',
+                'highlight' => 0,
+                'default' => 0,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'int'
+                ],
+                'name' => 'plugins.youtube.player_parameters.enablejsapi',
+                'validation' => 'strict'
+            ],
+            'plugins.youtube.player_parameters.origin' => [
+                'type' => 'text',
+                'label' => 'Origin',
+                'default' => '',
+                'validate' => [
+                    'type' => 'string'
+                ],
+                'name' => 'plugins.youtube.player_parameters.origin',
+                'validation' => 'strict'
+            ],
+            'plugins.youtube.player_parameters.playsinline' => [
+                'type' => 'toggle',
+                'label' => 'iOS playback behavior',
+                'highlight' => 0,
+                'default' => 0,
+                'options' => [
+                    0 => 'Fullscreen',
+                    1 => 'Inline'
+                ],
+                'validate' => [
+                    'type' => 'int'
+                ],
+                'name' => 'plugins.youtube.player_parameters.playsinline',
+                'validation' => 'strict'
+            ],
             'themes.quark' => [
                 'type' => '_root',
                 'form_field' => false,
@@ -5777,6 +6118,32 @@ return [
                 'problems' => [
                     'enabled' => 'plugins.problems.enabled',
                     'built_in_css' => 'plugins.problems.built_in_css'
+                ],
+                'youtube' => [
+                    'enabled' => 'plugins.youtube.enabled',
+                    'built_in_css' => 'plugins.youtube.built_in_css',
+                    'built_in_js' => 'plugins.youtube.built_in_js',
+                    'add_editor_button' => 'plugins.youtube.add_editor_button',
+                    'privacy_enhanced_mode' => 'plugins.youtube.privacy_enhanced_mode',
+                    'lazy_load' => 'plugins.youtube.lazy_load',
+                    'player_parameters' => [
+                        'vq' => 'plugins.youtube.player_parameters.vq',
+                        'autoplay' => 'plugins.youtube.player_parameters.autoplay',
+                        'loop' => 'plugins.youtube.player_parameters.loop',
+                        'showinfo' => 'plugins.youtube.player_parameters.showinfo',
+                        'rel' => 'plugins.youtube.player_parameters.rel',
+                        'modestbranding' => 'plugins.youtube.player_parameters.modestbranding',
+                        'color' => 'plugins.youtube.player_parameters.color',
+                        'cc_load_policy' => 'plugins.youtube.player_parameters.cc_load_policy',
+                        'iv_load_policy' => 'plugins.youtube.player_parameters.iv_load_policy',
+                        'controls' => 'plugins.youtube.player_parameters.controls',
+                        'disablekb' => 'plugins.youtube.player_parameters.disablekb',
+                        'fs' => 'plugins.youtube.player_parameters.fs',
+                        'hl' => 'plugins.youtube.player_parameters.hl',
+                        'enablejsapi' => 'plugins.youtube.player_parameters.enablejsapi',
+                        'origin' => 'plugins.youtube.player_parameters.origin',
+                        'playsinline' => 'plugins.youtube.player_parameters.playsinline'
+                    ]
                 ]
             ],
             'themes' => [

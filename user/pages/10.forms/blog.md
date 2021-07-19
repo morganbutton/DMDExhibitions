@@ -42,12 +42,11 @@ form:
       multiple: true
       accept:
         - "image/*"
-    - name: video
+    - name: content
       label: "videos to upload"
-      type: file
-      multiple: true
-      accept:
-        - "video/*"
+      type: textarea
+      size: long
+      classes: editor
     - name: audio
       label: "audio to upload"
       type: file
