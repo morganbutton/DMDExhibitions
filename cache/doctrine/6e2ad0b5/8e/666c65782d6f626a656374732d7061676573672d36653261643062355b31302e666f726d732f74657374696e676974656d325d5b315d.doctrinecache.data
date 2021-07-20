@@ -1,0 +1,22 @@
+1626743247
+C:39:"Grav\Common\Flex\Types\Pages\PageObject":1385:{a:4:{s:4:"type";s:5:"pages";s:3:"key";s:18:"forms/testingitem2";s:8:"elements";a:4:{s:4:"root";b:0;s:6:"header";a:7:{s:5:"title";s:12:"testingitem2";s:8:"taxonomy";a:4:{s:8:"category";s:4:"blog";s:3:"tag";a:2:{i:0;s:6:"dmd300";i:1;s:8:"fall2019";}s:5:"theme";a:1:{i:0;s:7:"futures";}s:4:"type";a:2:{i:0;s:10:"exhibition";i:1;s:5:"theme";}}s:8:"username";s:0:"";s:6:"images";a:1:{s:18:"Nature1869 (1).gif";a:4:{s:4:"name";s:18:"Nature1869 (1).gif";s:4:"type";s:9:"image/gif";s:4:"size";i:178452;s:4:"path";s:51:"user/pages/10.forms/testingitem2/Nature1869 (1).gif";}}s:6:"author";s:6:"morgan";s:5:"video";a:0:{}s:5:"audio";a:0:{}}s:11:"frontmatter";s:403:"title: testingitem2
+taxonomy:
+    category: blog
+    tag:
+        - dmd300
+        - fall2019
+    theme:
+        - futures
+    type:
+        - exhibition
+        - theme
+username: ''
+images:
+    'Nature1869 (1).gif':
+        name: 'Nature1869 (1).gif'
+        type: image/gif
+        size: 178452
+        path: 'user/pages/10.forms/testingitem2/Nature1869 (1).gif'
+author: morgan
+video: {  }
+audio: {  }";s:8:"markdown";s:11:"No content.";}s:7:"storage";a:6:{s:3:"key";s:18:"forms/testingitem2";s:11:"storage_key";s:21:"10.forms/testingitem2";s:8:"template";s:8:"testForm";s:17:"storage_timestamp";i:1626314983;s:8:"markdown";a:1:{s:0:"";a:1:{s:8:"testForm";i:1626314983;}}s:8:"checksum";s:32:"c95d3315171ed53a065492cb66fe1c08";}}}

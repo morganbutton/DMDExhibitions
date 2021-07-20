@@ -1,0 +1,94 @@
+1627348004
+a:2:{s:7:"content";s:2524:"<h1>Error: Invalid Frontmatter</h1>
+<p>Path: <code>C:/wamp64/www/dmdExhibitions/user/pages/10.forms/form.md</code></p>
+<p><strong>Failed to read C:/wamp64/www/dmdExhibitions/user/pages/10.forms/form.md: Indentation problem at line 65 (near " -").</strong></p>
+<pre><code>---
+title: 'student portal'
+template: form
+pageconfig:
+    parent: /blog
+    include_username: true
+    overwrite_mode: true
+pagefrontmatter:
+    template: testForm
+    title: 'My new Blog post'
+    taxonomy:
+        category: blog
+form:
+    name: testForm.md
+    template: null
+    refresh_prevention: true
+    ajax: true
+    fields:
+        -
+            name: author
+            label: Author
+            type: text
+        -
+            name: title
+            label: Title
+            type: text
+
+        -
+            name: content
+            label: 'Post Text'
+            type: textarea
+            size: long
+            classes: editor
+
+        -
+            name: taxonomy.tag
+            label: 'Content Tags (comma separated)'
+            type: text
+
+        -
+            name: content
+            label: 'Audio Embed Format: [youraudiofilename.mp3](youraudiofilename.mp3)'
+            type: textarea
+            size: long
+            classes: editor
+        -
+            name: images
+            label: 'Image Files'
+            type: file
+            multiple: true
+            accept:
+                - 'image/*'
+        -
+            name: content
+            label: 'Image Embed Format (When uploading more than one image copy and place each embed on its own line): &lt;br&gt;![imagename](yourImageName.jpg ''short description'')'
+            type: textarea
+            size: long
+            classes: editor
+        -
+            name: audio
+            label: 'Audio File'
+            type: file
+            multiple: true
+            accept:
+                - 'audio/*'
+         -
+            name: content
+            label: 'Video Embed Format: &lt;div class="grav-youtube-wrapper "&gt;
+  &lt;div class="grav-youtube"&gt;
+      &lt;iframe src="https://www.youtube.com/embed/BK8guP9ov2U" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+  &lt;/div&gt;
+&lt;/div&gt;'
+            type: textarea
+            size: long
+            classes: editor
+    buttons:
+        -
+            type: submit
+            value: Submit
+    process:
+        -
+            add_page: true
+        -
+            redirect: /forms
+---
+
+## Student work upload form
+
+To use this form ask your teacher for the cheetsheet and content tags.
+</code></pre>";s:12:"content_meta";N;}

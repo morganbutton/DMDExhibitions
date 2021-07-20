@@ -1,0 +1,28 @@
+1626743737
+C:39:"Grav\Common\Flex\Types\Pages\PageObject":1676:{a:4:{s:4:"type";s:5:"pages";s:3:"key";s:13:"forms/embedme";s:8:"elements";a:4:{s:4:"root";b:0;s:6:"header";a:6:{s:5:"title";s:7:"embedME";s:8:"taxonomy";a:4:{s:8:"category";s:4:"blog";s:3:"tag";a:2:{i:0;s:6:"dmd300";i:1;s:8:"fall2019";}s:5:"theme";a:1:{i:0;s:7:"futures";}s:4:"type";a:2:{i:0;s:10:"exhibition";i:1;s:5:"theme";}}s:8:"username";s:0:"";s:6:"images";a:2:{s:14:"comingsoon.jpg";a:4:{s:4:"name";s:14:"comingsoon.jpg";s:4:"type";s:10:"image/jpeg";s:4:"size";i:27927;s:4:"path";s:42:"user/pages/10.forms/embedme/comingsoon.jpg";}s:14:"starsprout.png";a:4:{s:4:"name";s:14:"starsprout.png";s:4:"type";s:9:"image/png";s:4:"size";i:8747;s:4:"path";s:42:"user/pages/10.forms/embedme/starsprout.png";}}s:6:"author";s:6:"morgan";s:5:"audio";a:0:{}}s:11:"frontmatter";s:512:"title: embedME
+taxonomy:
+    category: blog
+    tag:
+        - dmd300
+        - fall2019
+    theme:
+        - futures
+    type:
+        - exhibition
+        - theme
+username: ''
+images:
+    comingsoon.jpg:
+        name: comingsoon.jpg
+        type: image/jpeg
+        size: 27927
+        path: user/pages/10.forms/embedme/comingsoon.jpg
+    starsprout.png:
+        name: starsprout.png
+        type: image/png
+        size: 8747
+        path: user/pages/10.forms/embedme/starsprout.png
+author: morgan
+audio: {  }";s:8:"markdown";s:81:"![starsprout](starsprout.png 'logo')
+![comingsoon](comingsoon.jpg 'coming soon')
+";}s:7:"storage";a:6:{s:3:"key";s:13:"forms/embedme";s:11:"storage_key";s:16:"10.forms/embedme";s:8:"template";s:8:"testForm";s:17:"storage_timestamp";i:1626734496;s:8:"markdown";a:1:{s:0:"";a:1:{s:8:"testForm";i:1626734496;}}s:8:"checksum";s:32:"aa3f9dc13ee65bd9fc170fed39f57238";}}}

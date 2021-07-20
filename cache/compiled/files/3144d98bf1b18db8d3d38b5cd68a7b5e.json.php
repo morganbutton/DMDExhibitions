@@ -2,25 +2,26 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledJsonFile',
     'filename' => 'C:/wamp64/www/dmdExhibitions/user/data/flex/indexes/pages.json',
-    'modified' => 1626731678,
+    'modified' => 1626743137,
     'data' => [
         'version' => '1.5',
-        'timestamp' => 1626731678,
-        'count' => 34,
+        'timestamp' => 1626743137,
+        'count' => 37,
         'index' => [
             '' => [
                 'key' => '',
                 'storage_key' => '',
                 'template' => NULL,
-                'storage_timestamp' => 1626145043,
+                'storage_timestamp' => 1626741973,
                 'children' => [
                     '1.dmd-exhibitions' => 1626145043,
                     '08.capstone' => 1625097211,
-                    '09.themes' => 1625097211,
-                    '10.forms' => 1626145189,
+                    '09.themes' => 1626233918,
+                    '10.forms' => 1626741784,
+                    '11.test01' => 1626741973,
                     'imageFolder' => 1625097211
                 ],
-                'checksum' => 'e0fe0b97a89049127ebea40fd48bcfef'
+                'checksum' => '92b031d3daa0f9b7524494a66faddfda'
             ],
             '1.dmd-exhibitions' => [
                 'key' => 'dmd-exhibitions',
@@ -203,11 +204,11 @@ return [
             '10.forms' => [
                 'key' => 'forms',
                 'storage_key' => '10.forms',
-                'template' => 'blog',
-                'storage_timestamp' => 1626731665,
+                'template' => 'form',
+                'storage_timestamp' => 1626743027,
                 'markdown' => [
                     '' => [
-                        'blog' => 1626731665
+                        'form' => 1626743027
                     ]
                 ],
                 'children' => [
@@ -215,8 +216,9 @@ return [
                     'apple' => 1626236297,
                     'cherry' => 1626236749,
                     'deletetwig' => 1626317721,
+                    'embedme' => 1626734496,
                     'moge' => 1626318684,
-                    'motest' => 1626320593,
+                    'motest' => 1626734284,
                     'my-new-page' => 1626318660,
                     'orange' => 1626236708,
                     'pear' => 1626236403,
@@ -227,10 +229,11 @@ return [
                     'testingitem2' => 1626314983,
                     'testingtaxonomy' => 1626233790,
                     'testmd' => 1626320347,
+                    'testvideoembed' => 1626731728,
                     'twig' => 1626317753,
                     'youtubeembed' => 1626731559
                 ],
-                'checksum' => '2bc19c6d604b0a14d4c520f34c5542ef'
+                'checksum' => '08134eddb2b5421158c90668449ef426'
             ],
             '10.forms/admin' => [
                 'key' => 'forms/admin',
@@ -280,6 +283,18 @@ return [
                 ],
                 'checksum' => '6f703e288e7465783d4e588cc73b29b2'
             ],
+            '10.forms/embedme' => [
+                'key' => 'forms/embedme',
+                'storage_key' => '10.forms/embedme',
+                'template' => 'testForm',
+                'storage_timestamp' => 1626734496,
+                'markdown' => [
+                    '' => [
+                        'testForm' => 1626734496
+                    ]
+                ],
+                'checksum' => 'aa3f9dc13ee65bd9fc170fed39f57238'
+            ],
             '10.forms/moge' => [
                 'key' => 'forms/moge',
                 'storage_key' => '10.forms/moge',
@@ -296,13 +311,13 @@ return [
                 'key' => 'forms/motest',
                 'storage_key' => '10.forms/motest',
                 'template' => 'testForm',
-                'storage_timestamp' => 1626320593,
+                'storage_timestamp' => 1626734284,
                 'markdown' => [
                     '' => [
-                        'testForm' => 1626320593
+                        'testForm' => 1626734284
                     ]
                 ],
-                'checksum' => '1b01cebf748de2fc1e2ee29a221de32f'
+                'checksum' => 'ac99b6089de465391ce5a80256c9027b'
             ],
             '10.forms/my-new-page' => [
                 'key' => 'forms/my-new-page',
@@ -424,6 +439,18 @@ return [
                 ],
                 'checksum' => '756d833c86270329638295c7e4df6786'
             ],
+            '10.forms/testvideoembed' => [
+                'key' => 'forms/testvideoembed',
+                'storage_key' => '10.forms/testvideoembed',
+                'template' => 'testForm',
+                'storage_timestamp' => 1626731728,
+                'markdown' => [
+                    '' => [
+                        'testForm' => 1626731728
+                    ]
+                ],
+                'checksum' => '7bfa5d659fc068e4ef2dc8e926c3a33e'
+            ],
             '10.forms/twig' => [
                 'key' => 'forms/twig',
                 'storage_key' => '10.forms/twig',
@@ -447,6 +474,18 @@ return [
                     ]
                 ],
                 'checksum' => '79117f4a0a4502e82ef1ecae32d19d0a'
+            ],
+            '11.test01' => [
+                'key' => 'test01',
+                'storage_key' => '11.test01',
+                'template' => 'default',
+                'storage_timestamp' => 1626741973,
+                'markdown' => [
+                    '' => [
+                        'default' => 1626741973
+                    ]
+                ],
+                'checksum' => '41fef64c7e3fffcce2bd17fb60982196'
             ],
             'imageFolder' => [
                 'key' => 'imagefolder',

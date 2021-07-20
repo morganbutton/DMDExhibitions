@@ -1,0 +1,23 @@
+1626743627
+C:39:"Grav\Common\Flex\Types\Pages\PageObject":1233:{a:4:{s:4:"type";s:5:"pages";s:3:"key";s:33:"capstone/dmd300/dmd300-spring2020";s:8:"elements";a:4:{s:4:"root";b:0;s:6:"header";a:3:{s:5:"title";s:17:"DMD300:Spring2020";s:7:"content";a:5:{s:5:"items";a:1:{i:0;s:14:"@self.children";}s:5:"limit";i:5000;s:5:"order";a:2:{s:2:"by";s:4:"date";s:3:"dir";s:4:"desc";}s:10:"pagination";b:1;s:20:"url_taxonomy_filters";b:1;}s:8:"taxonomy";a:2:{s:3:"tag";a:2:{i:0;s:6:"dmd300";i:1;s:10:"spring2020";}s:4:"type";a:2:{i:0;s:10:"exhibition";i:1;s:8:"capstone";}}}s:11:"frontmatter";s:252:"title: "DMD300:Spring2020"
+content:
+  items:
+    - "@self.children"
+  limit: 5000
+  order:
+    by: date
+    dir: desc
+  pagination: true
+  url_taxonomy_filters: true
+taxonomy:
+  tag:
+    - dmd300
+    - spring2020
+  type:
+    - exhibition
+    - capstone";s:8:"markdown";s:113:"![DMD300:Spring2020](../../../imagefolder/capstoneSpring2020.png?lightbox&resize=400)
+
+===
+
+###DMD400 : Fall2019
+";}s:7:"storage";a:6:{s:3:"key";s:33:"capstone/dmd300/dmd300-spring2020";s:11:"storage_key";s:39:"08.capstone/01.dmd300/dmd300-spring2020";s:8:"template";s:4:"blog";s:17:"storage_timestamp";i:1626145043;s:8:"markdown";a:1:{s:0:"";a:1:{s:4:"blog";i:1626145043;}}s:8:"checksum";s:32:"c0c62051e4f880a418d34a28b17457ce";}}}

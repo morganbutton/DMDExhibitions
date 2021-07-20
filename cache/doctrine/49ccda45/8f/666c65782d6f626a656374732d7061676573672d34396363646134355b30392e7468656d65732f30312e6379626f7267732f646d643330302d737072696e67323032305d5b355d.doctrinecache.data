@@ -1,0 +1,25 @@
+1626743737
+C:39:"Grav\Common\Flex\Types\Pages\PageObject":1332:{a:4:{s:4:"type";s:5:"pages";s:3:"key";s:32:"themes/cyborgs/dmd300-spring2020";s:8:"elements";a:4:{s:4:"root";b:0;s:6:"header";a:3:{s:5:"title";s:17:"DMD300:Spring2020";s:7:"content";a:5:{s:5:"items";a:1:{i:0;s:14:"@self.children";}s:5:"limit";i:5;s:5:"order";a:2:{s:2:"by";s:4:"date";s:3:"dir";s:4:"desc";}s:10:"pagination";b:1;s:20:"url_taxonomy_filters";b:1;}s:8:"taxonomy";a:3:{s:3:"tag";a:2:{i:0;s:6:"dmd300";i:1;s:10:"spring2020";}s:5:"theme";a:1:{i:0;s:7:"cyborgs";}s:4:"type";a:2:{i:0;s:10:"exhibition";i:1;s:5:"theme";}}}s:11:"frontmatter";s:317:"title: 'DMD300:Spring2020'
+content:
+    items:
+        - '@self.children'
+    limit: 5
+    order:
+        by: date
+        dir: desc
+    pagination: true
+    url_taxonomy_filters: true
+taxonomy:
+    tag:
+        - dmd300
+        - spring2020
+    theme:
+        - cyborgs
+    type:
+        - exhibition
+        - theme";s:8:"markdown";s:120:"![CYBORGS PROJECT EXHIBITIONS](../../../imagefolder/cyborgsSpring2020.png?lightbox&resize=400)
+
+===
+
+###DMD300:Fall2020
+";}s:7:"storage";a:6:{s:3:"key";s:32:"themes/cyborgs/dmd300-spring2020";s:11:"storage_key";s:38:"09.themes/01.cyborgs/dmd300-spring2020";s:8:"template";s:4:"blog";s:17:"storage_timestamp";i:1626145043;s:8:"markdown";a:1:{s:0:"";a:1:{s:4:"blog";i:1626145043;}}s:8:"checksum";s:32:"e76dd20d3af7499d190e51fb31059a70";}}}

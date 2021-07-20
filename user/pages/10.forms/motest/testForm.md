@@ -21,5 +21,3 @@ author: morgan
 video: {}
 audio: {}
 ---
-
-![CYBORGS PROJECT EXHIBITIONS](bubbles01.jpg?lightbox&resize=400)
