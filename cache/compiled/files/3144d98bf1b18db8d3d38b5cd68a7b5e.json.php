@@ -2,26 +2,24 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledJsonFile',
     'filename' => 'C:/wamp64/www/dmdExhibitions/user/data/flex/indexes/pages.json',
-    'modified' => 1626743137,
+    'modified' => 1626748730,
     'data' => [
         'version' => '1.5',
-        'timestamp' => 1626743137,
-        'count' => 37,
+        'timestamp' => 1626748730,
+        'count' => 17,
         'index' => [
             '' => [
                 'key' => '',
                 'storage_key' => '',
                 'template' => NULL,
-                'storage_timestamp' => 1626741973,
+                'storage_timestamp' => 1626747717,
                 'children' => [
                     '1.dmd-exhibitions' => 1626145043,
                     '08.capstone' => 1625097211,
                     '09.themes' => 1626233918,
-                    '10.forms' => 1626741784,
-                    '11.test01' => 1626741973,
-                    'imageFolder' => 1625097211
+                    '10.projects' => 1626747717
                 ],
-                'checksum' => '92b031d3daa0f9b7524494a66faddfda'
+                'checksum' => 'b0aeb0f043679699b8d24152f7bef4e9'
             ],
             '1.dmd-exhibitions' => [
                 'key' => 'dmd-exhibitions',
@@ -201,298 +199,45 @@ return [
                 ],
                 'checksum' => '1605c6b5cb452df6d1229c07bff7e72a'
             ],
-            '10.forms' => [
-                'key' => 'forms',
-                'storage_key' => '10.forms',
+            '10.projects' => [
+                'key' => 'projects',
+                'storage_key' => '10.projects',
                 'template' => 'form',
-                'storage_timestamp' => 1626743027,
+                'storage_timestamp' => 1626748723,
                 'markdown' => [
                     '' => [
-                        'form' => 1626743027
+                        'form' => 1626748723
                     ]
                 ],
                 'children' => [
-                    'admin' => 1626235563,
-                    'apple' => 1626236297,
-                    'cherry' => 1626236749,
-                    'deletetwig' => 1626317721,
-                    'embedme' => 1626734496,
-                    'moge' => 1626318684,
-                    'motest' => 1626734284,
-                    'my-new-page' => 1626318660,
-                    'orange' => 1626236708,
-                    'pear' => 1626236403,
-                    'taxonomytestmomo' => 1626234041,
-                    'testing' => 1626145043,
-                    'testingfutures' => 1626234251,
-                    'testingitem' => 1626314920,
-                    'testingitem2' => 1626314983,
-                    'testingtaxonomy' => 1626233790,
-                    'testmd' => 1626320347,
-                    'testvideoembed' => 1626731728,
-                    'twig' => 1626317753,
-                    'youtubeembed' => 1626731559
+                    'noice' => 1626747915,
+                    'test' => 1626748241
                 ],
-                'checksum' => '08134eddb2b5421158c90668449ef426'
+                'checksum' => '4eddab3402fbd5c9c6692f0398d0e697'
             ],
-            '10.forms/admin' => [
-                'key' => 'forms/admin',
-                'storage_key' => '10.forms/admin',
-                'template' => 'blog',
-                'storage_timestamp' => 1626235563,
-                'markdown' => [
-                    '' => [
-                        'blog' => 1626235563
-                    ]
-                ],
-                'checksum' => 'fd54a32dcc78126d4cc9590cab5ded5f'
-            ],
-            '10.forms/apple' => [
-                'key' => 'forms/apple',
-                'storage_key' => '10.forms/apple',
-                'template' => 'blog',
-                'storage_timestamp' => 1626236297,
-                'markdown' => [
-                    '' => [
-                        'blog' => 1626236297
-                    ]
-                ],
-                'checksum' => '4e2c6dc3cc8449846eb6b002ea8d90cc'
-            ],
-            '10.forms/cherry' => [
-                'key' => 'forms/cherry',
-                'storage_key' => '10.forms/cherry',
+            '10.projects/noice' => [
+                'key' => 'projects/noice',
+                'storage_key' => '10.projects/noice',
                 'template' => 'testForm',
-                'storage_timestamp' => 1626236749,
+                'storage_timestamp' => 1626747915,
                 'markdown' => [
                     '' => [
-                        'testForm' => 1626236749
+                        'testForm' => 1626747915
                     ]
                 ],
-                'checksum' => '5dd470610953a32d3a9b8cfabf962a34'
+                'checksum' => '6a6c4c46451cee0eed8d9d71dc918618'
             ],
-            '10.forms/deletetwig' => [
-                'key' => 'forms/deletetwig',
-                'storage_key' => '10.forms/deletetwig',
+            '10.projects/test' => [
+                'key' => 'projects/test',
+                'storage_key' => '10.projects/test',
                 'template' => 'testForm',
-                'storage_timestamp' => 1626317721,
+                'storage_timestamp' => 1626748241,
                 'markdown' => [
                     '' => [
-                        'testForm' => 1626317721
+                        'testForm' => 1626748241
                     ]
                 ],
-                'checksum' => '6f703e288e7465783d4e588cc73b29b2'
-            ],
-            '10.forms/embedme' => [
-                'key' => 'forms/embedme',
-                'storage_key' => '10.forms/embedme',
-                'template' => 'testForm',
-                'storage_timestamp' => 1626734496,
-                'markdown' => [
-                    '' => [
-                        'testForm' => 1626734496
-                    ]
-                ],
-                'checksum' => 'aa3f9dc13ee65bd9fc170fed39f57238'
-            ],
-            '10.forms/moge' => [
-                'key' => 'forms/moge',
-                'storage_key' => '10.forms/moge',
-                'template' => 'testForm',
-                'storage_timestamp' => 1626318684,
-                'markdown' => [
-                    '' => [
-                        'testForm' => 1626318684
-                    ]
-                ],
-                'checksum' => '012ffe190e10b0826546c584e39fc0a4'
-            ],
-            '10.forms/motest' => [
-                'key' => 'forms/motest',
-                'storage_key' => '10.forms/motest',
-                'template' => 'testForm',
-                'storage_timestamp' => 1626734284,
-                'markdown' => [
-                    '' => [
-                        'testForm' => 1626734284
-                    ]
-                ],
-                'checksum' => 'ac99b6089de465391ce5a80256c9027b'
-            ],
-            '10.forms/my-new-page' => [
-                'key' => 'forms/my-new-page',
-                'storage_key' => '10.forms/my-new-page',
-                'template' => 'testForm',
-                'storage_timestamp' => 1626318660,
-                'markdown' => [
-                    '' => [
-                        'testForm' => 1626318660
-                    ]
-                ],
-                'checksum' => 'fee614b243f17a3dcf7992cdb96d52f9'
-            ],
-            '10.forms/orange' => [
-                'key' => 'forms/orange',
-                'storage_key' => '10.forms/orange',
-                'template' => 'testForm',
-                'storage_timestamp' => 1626236708,
-                'markdown' => [
-                    '' => [
-                        'testForm' => 1626236708
-                    ]
-                ],
-                'checksum' => '5f7dca9b0d47ac4704b278e840ceecf7'
-            ],
-            '10.forms/pear' => [
-                'key' => 'forms/pear',
-                'storage_key' => '10.forms/pear',
-                'template' => 'testForm',
-                'storage_timestamp' => 1626236403,
-                'markdown' => [
-                    '' => [
-                        'testForm' => 1626236403
-                    ]
-                ],
-                'checksum' => 'be7d0e79b2b38547d9c1c259029b4039'
-            ],
-            '10.forms/taxonomytestmomo' => [
-                'key' => 'forms/taxonomytestmomo',
-                'storage_key' => '10.forms/taxonomytestmomo',
-                'template' => 'blog',
-                'storage_timestamp' => 1626234041,
-                'markdown' => [
-                    '' => [
-                        'blog' => 1626234041
-                    ]
-                ],
-                'checksum' => '314d7a30fb78b4dd9927e72ccf552b80'
-            ],
-            '10.forms/testing' => [
-                'key' => 'forms/testing',
-                'storage_key' => '10.forms/testing',
-                'template' => 'item',
-                'storage_timestamp' => 1626145043,
-                'markdown' => [
-                    '' => [
-                        'item' => 1626145043
-                    ]
-                ],
-                'checksum' => '3ecd2a375fdef8edae7e00fb7097f47d'
-            ],
-            '10.forms/testingfutures' => [
-                'key' => 'forms/testingfutures',
-                'storage_key' => '10.forms/testingfutures',
-                'template' => 'blog',
-                'storage_timestamp' => 1626234251,
-                'markdown' => [
-                    '' => [
-                        'blog' => 1626234251
-                    ]
-                ],
-                'checksum' => 'e5efeea6eff0518fa7cac6308e9a9d20'
-            ],
-            '10.forms/testingitem' => [
-                'key' => 'forms/testingitem',
-                'storage_key' => '10.forms/testingitem',
-                'template' => 'testForm',
-                'storage_timestamp' => 1626314920,
-                'markdown' => [
-                    '' => [
-                        'testForm' => 1626314920
-                    ]
-                ],
-                'checksum' => '9d863c71237d8a937ce66378bb602e06'
-            ],
-            '10.forms/testingitem2' => [
-                'key' => 'forms/testingitem2',
-                'storage_key' => '10.forms/testingitem2',
-                'template' => 'testForm',
-                'storage_timestamp' => 1626314983,
-                'markdown' => [
-                    '' => [
-                        'testForm' => 1626314983
-                    ]
-                ],
-                'checksum' => 'c95d3315171ed53a065492cb66fe1c08'
-            ],
-            '10.forms/testingtaxonomy' => [
-                'key' => 'forms/testingtaxonomy',
-                'storage_key' => '10.forms/testingtaxonomy',
-                'template' => 'blog',
-                'storage_timestamp' => 1626233790,
-                'markdown' => [
-                    '' => [
-                        'blog' => 1626233790
-                    ]
-                ],
-                'checksum' => '5f98c30cc1f2068dd7b4778515bfcc33'
-            ],
-            '10.forms/testmd' => [
-                'key' => 'forms/testmd',
-                'storage_key' => '10.forms/testmd',
-                'template' => 'testForm',
-                'storage_timestamp' => 1626320347,
-                'markdown' => [
-                    '' => [
-                        'testForm' => 1626320347
-                    ]
-                ],
-                'checksum' => '756d833c86270329638295c7e4df6786'
-            ],
-            '10.forms/testvideoembed' => [
-                'key' => 'forms/testvideoembed',
-                'storage_key' => '10.forms/testvideoembed',
-                'template' => 'testForm',
-                'storage_timestamp' => 1626731728,
-                'markdown' => [
-                    '' => [
-                        'testForm' => 1626731728
-                    ]
-                ],
-                'checksum' => '7bfa5d659fc068e4ef2dc8e926c3a33e'
-            ],
-            '10.forms/twig' => [
-                'key' => 'forms/twig',
-                'storage_key' => '10.forms/twig',
-                'template' => 'testForm',
-                'storage_timestamp' => 1626317753,
-                'markdown' => [
-                    '' => [
-                        'testForm' => 1626317753
-                    ]
-                ],
-                'checksum' => 'd29fac1f425e83b020c4ff27a1df00c4'
-            ],
-            '10.forms/youtubeembed' => [
-                'key' => 'forms/youtubeembed',
-                'storage_key' => '10.forms/youtubeembed',
-                'template' => 'testForm',
-                'storage_timestamp' => 1626731559,
-                'markdown' => [
-                    '' => [
-                        'testForm' => 1626731559
-                    ]
-                ],
-                'checksum' => '79117f4a0a4502e82ef1ecae32d19d0a'
-            ],
-            '11.test01' => [
-                'key' => 'test01',
-                'storage_key' => '11.test01',
-                'template' => 'default',
-                'storage_timestamp' => 1626741973,
-                'markdown' => [
-                    '' => [
-                        'default' => 1626741973
-                    ]
-                ],
-                'checksum' => '41fef64c7e3fffcce2bd17fb60982196'
-            ],
-            'imageFolder' => [
-                'key' => 'imagefolder',
-                'storage_key' => 'imageFolder',
-                'template' => NULL,
-                'storage_timestamp' => 1625097211,
-                'checksum' => '609abeeb05a658605a281c9470607da4'
+                'checksum' => 'd81c3c205150cb4e94b1f58a10c10277'
             ]
         ]
     ]

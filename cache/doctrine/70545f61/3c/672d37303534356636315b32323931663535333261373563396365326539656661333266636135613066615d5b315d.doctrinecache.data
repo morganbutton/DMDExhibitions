@@ -1,0 +1,66 @@
+1627355092
+a:2:{s:7:"content";s:2563:"<h1>Error: Invalid Frontmatter</h1>
+<p>Path: <code>C:/wamp64/www/dmdExhibitions/user/pages/10.projects/form.md</code></p>
+<p><strong>Failed to read C:/wamp64/www/dmdExhibitions/user/pages/10.projects/form.md: Indentation problem at line 29 (near " <i>Image Embed Format (When uploading more than one image copy and paste each embed on its own line):</i> <br><b><img src="/dmdExhibitions/projects/yourImageName.jpg" alt="imagename" title="short description" /></b><br><i>Audio Embed Format (When uploading more than one audio file copy and paste each embed on its own line):</i> <br><b><a href="/dmdExhibitions/projects/youraudiofilename.mp3">youraudiofilename.mp3</a></b>"").</strong></p>
+<pre><code>---
+title: "Student Portal"
+template: form
+pageconfig:
+  parent: /blog
+  include_username: true
+  overwrite_mode: true
+pagefrontmatter:
+  template: testForm
+  title: "My new Blog post"
+  taxonomy:
+    category: blog
+form:
+  name: testForm.md
+  template: null
+  refresh_prevention: true
+  ajax: true
+  fields:
+    - name: author
+      label: Author
+      type: text
+    - name: title
+      label: Title
+      type: text
+    - name: taxonomy.tag
+      label: "Content Tags (comma separated)"
+      type: text
+    - name: content
+      label: "&lt;i&gt;Youtube Embed Format  (When uploading more than one Youtube Video copy and paste each embed on its own line):&lt;/i&gt; &lt;br&gt; &lt;b&gt;&lt;div class="grav-youtube-wrapper "&gt;
+  &lt;div class="grav-youtube"&gt;
+      &lt;iframe src="https://www.youtube.com/embed/BK8guP9ov2U" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+  &lt;/div&gt;
+&lt;/div&gt;&lt;/b&gt;&lt;br&gt;
+     &lt;i&gt;Image Embed Format (When uploading more than one image copy and paste each embed on its own line):&lt;/i&gt; &lt;br&gt;&lt;b&gt;![imagename](yourImageName.jpg 'short description')&lt;/b&gt;&lt;br&gt;&lt;i&gt;Audio Embed Format (When uploading more than one audio file copy and paste each embed on its own line):&lt;/i&gt; &lt;br&gt;&lt;b&gt;[youraudiofilename.mp3](youraudiofilename.mp3)&lt;/b&gt;"
+      type: textarea
+      size: long
+      classes: text
+
+    - name: images
+      label: "Image Files"
+      type: file
+      multiple: true
+      accept:
+        - "image/*"
+    - name: audio
+      label: "Audio File"
+      type: file
+      multiple: true
+      accept:
+        - "audio/*"
+  buttons:
+    - type: submit
+      value: Submit
+  process:
+    - add_page: true
+    - redirect: /projects
+---
+
+## Student work upload form
+
+To use this form ask your teacher for the cheetsheet and content tags.
+</code></pre>";s:12:"content_meta";N;}
