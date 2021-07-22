@@ -2,11 +2,11 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledJsonFile',
     'filename' => 'C:/wamp64/www/dmdExhibitions/user/data/flex/indexes/pages.json',
-    'modified' => 1626748730,
+    'modified' => 1626891709,
     'data' => [
         'version' => '1.5',
-        'timestamp' => 1626748730,
-        'count' => 17,
+        'timestamp' => 1626891709,
+        'count' => 15,
         'index' => [
             '' => [
                 'key' => '',
@@ -203,41 +203,13 @@ return [
                 'key' => 'projects',
                 'storage_key' => '10.projects',
                 'template' => 'form',
-                'storage_timestamp' => 1626748723,
+                'storage_timestamp' => 1626751054,
                 'markdown' => [
                     '' => [
-                        'form' => 1626748723
+                        'form' => 1626750327
                     ]
                 ],
-                'children' => [
-                    'noice' => 1626747915,
-                    'test' => 1626748241
-                ],
-                'checksum' => '4eddab3402fbd5c9c6692f0398d0e697'
-            ],
-            '10.projects/noice' => [
-                'key' => 'projects/noice',
-                'storage_key' => '10.projects/noice',
-                'template' => 'testForm',
-                'storage_timestamp' => 1626747915,
-                'markdown' => [
-                    '' => [
-                        'testForm' => 1626747915
-                    ]
-                ],
-                'checksum' => '6a6c4c46451cee0eed8d9d71dc918618'
-            ],
-            '10.projects/test' => [
-                'key' => 'projects/test',
-                'storage_key' => '10.projects/test',
-                'template' => 'testForm',
-                'storage_timestamp' => 1626748241,
-                'markdown' => [
-                    '' => [
-                        'testForm' => 1626748241
-                    ]
-                ],
-                'checksum' => 'd81c3c205150cb4e94b1f58a10c10277'
+                'checksum' => 'cdc31664128dc44c53a10ce3cd610a86'
             ]
         ]
     ]

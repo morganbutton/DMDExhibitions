@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledMarkdownFile',
     'filename' => 'C:/wamp64/www/dmdExhibitions/user/pages/10.projects/form.md',
-    'modified' => 1626748723,
+    'modified' => 1626750327,
     'data' => [
         'header' => [
             'title' => 'Student Portal',
@@ -42,19 +42,12 @@ return [
                     ],
                     3 => [
                         'name' => 'content',
-                        'label' => 'Post Text',
+                        'label' => '<i>Youtube Embed Format  (When uploading more than one Youtube Video copy and paste each embed on its own line):</i> <br> <b>[plugin:youtube](https://www.youtube.com/watch?v=BK8guP9ov2U)</b><br> <i>Image Embed Format (When uploading more than one image copy and paste each embed on its own line):</i> <br><b>![imagename](yourImageName.jpg \'short description\')</b><br><i>Audio Embed Format (When uploading more than one audio file copy and paste each embed on its own line):</i> <br><b>[youraudiofilename.mp3](youraudiofilename.mp3)</b> ',
                         'type' => 'textarea',
                         'size' => 'long',
                         'classes' => 'text'
                     ],
                     4 => [
-                        'name' => 'video embed',
-                        'label' => 'Youtube Embed Format  (When uploading more than one Youtube Video copy and paste each embed on its own line): <br> <b>[plugin:youtube](https://www.youtube.com/watch?v=BK8guP9ov2U)</b>',
-                        'type' => 'textarea',
-                        'size' => 'long',
-                        'classes' => 'editor'
-                    ],
-                    5 => [
                         'name' => 'images',
                         'label' => 'Image Files',
                         'type' => 'file',
@@ -63,14 +56,7 @@ return [
                             0 => 'image/*'
                         ]
                     ],
-                    6 => [
-                        'name' => 'content',
-                        'label' => 'Image Embed Format (When uploading more than one image copy and paste each embed on its own line): <br><b>![imagename](yourImageName.jpg \'short description\')</b>',
-                        'type' => 'textarea',
-                        'size' => 'long',
-                        'classes' => 'editor'
-                    ],
-                    7 => [
+                    5 => [
                         'name' => 'audio',
                         'label' => 'Audio File',
                         'type' => 'file',
@@ -78,13 +64,6 @@ return [
                         'accept' => [
                             0 => 'audio/*'
                         ]
-                    ],
-                    8 => [
-                        'name' => 'content',
-                        'label' => 'Audio Embed Format (When uploading more than one audio file copy and paste each embed on its own line): <br><b>[youraudiofilename.mp3](youraudiofilename.mp3)</b>',
-                        'type' => 'textarea',
-                        'size' => 'long',
-                        'classes' => 'editor'
                     ]
                 ],
                 'buttons' => [
@@ -130,15 +109,13 @@ form:
       label: "Content Tags (comma separated)"
       type: text
     - name: content
-      label: "Post Text"
+      label: "<i>Youtube Embed Format  (When uploading more than one Youtube Video copy and paste each embed on its own line):</i> <br> <b>[plugin:youtube](https://www.youtube.com/watch?v=BK8guP9ov2U)</b><br>
+      <i>Image Embed Format (When uploading more than one image copy and paste each embed on its own line):</i> <br><b>![imagename](yourImageName.jpg \'short description\')</b><br><i>Audio Embed Format (When uploading more than one audio file copy and paste each embed on its own line):</i> <br><b>[youraudiofilename.mp3](youraudiofilename.mp3)</b>
+      "
       type: textarea
       size: long
       classes: text
-    - name: video embed
-      label: "Youtube Embed Format  (When uploading more than one Youtube Video copy and paste each embed on its own line): <br> <b>[plugin:youtube](https://www.youtube.com/watch?v=BK8guP9ov2U)</b>"
-      type: textarea
-      size: long
-      classes: editor
+    
 
     - name: images
       label: "Image Files"
@@ -146,22 +123,12 @@ form:
       multiple: true
       accept:
         - "image/*"
-    - name: content
-      label: "Image Embed Format (When uploading more than one image copy and paste each embed on its own line): <br><b>![imagename](yourImageName.jpg \'short description\')</b>"
-      type: textarea
-      size: long
-      classes: editor
     - name: audio
       label: "Audio File"
       type: file
       multiple: true
       accept:
         - "audio/*"
-    - name: content
-      label: "Audio Embed Format (When uploading more than one audio file copy and paste each embed on its own line): <br><b>[youraudiofilename.mp3](youraudiofilename.mp3)</b>"
-      type: textarea
-      size: long
-      classes: editor
   buttons:
     - type: submit
       value: Submit
