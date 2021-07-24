@@ -1,0 +1,9 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block content %}
+    {% for image in page.media.images %}
+        {{ image.cropZoom(800,400).html|raw }}
+    {% endfor %}
+    {{ page.content|raw }}
+
+{% endblock %}
