@@ -32,6 +32,13 @@ form:
       type: textarea
       size: long
       classes: text
+    - name: imageEmbed
+      label: "
+      <i>Image Embed Format (When uploading more than one image copy and paste each embed on its own line):</i> <br><b>![imagename](yourImageName.jpg 'short description')</b><br>
+      "
+      type: textarea
+      size: long
+      classes: text
     
 
     - name: images

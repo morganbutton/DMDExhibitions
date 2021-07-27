@@ -1,5 +1,6 @@
 {% extends 'partials/base.html.twig' %}
 {% set blog_image = page.media.images[page.header.hero_image] ?: page.media.images|first %}
+
 {% set collection = page.collection() %}
 {% set blog = page.find(header_var('blog_url')|defined(theme_var('blog-page'))) %}
 {% set show_breadcrumbs = header_var('show_breadcrumbs', [page, blog])|defined(true) %}
@@ -21,6 +22,7 @@
 {% block hero %}
     {% include 'partials/hero.html.twig' with {id: 'blog-hero', content: page.content} %}
 {% endblock %}
+
 
 {% block body %}
     <section id="body-wrapper" class="section blog-listing">
