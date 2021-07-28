@@ -1,14 +1,19 @@
 version: '1.1'
-timestamp: 1625096996
-count: 2
+timestamp: 1627103290
+count: 3
 index:
+  ajbeyer:
+    storage_key: ajbeyer
+    storage_timestamp: 1626891854
+    key: ajbeyer
+    email: aj.beyer@gmail.com
   msc227:
     storage_key: msc227
-    storage_timestamp: 1625096996
+    storage_timestamp: 1625096998
     key: msc227
     email: msc227@psu.edu
   mtb5591:
     storage_key: mtb5591
-    storage_timestamp: 1625096806
+    storage_timestamp: 1625096808
     key: mtb5591
     email: morgan_button@outlook.com
