@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledMarkdownFile',
     'filename' => '/var/www/html/user/pages/08.capstone/01.dmd300/dmd300-spring2020/blog.md',
-    'modified' => 1627066083,
+    'modified' => 1626145043,
     'data' => [
         'header' => [
             'title' => 'DMD300:Spring2020',

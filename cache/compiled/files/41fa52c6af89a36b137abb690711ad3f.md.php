@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledMarkdownFile',
     'filename' => '/var/www/html/user/pages/09.themes/01.cyborgs/blog.md',
-    'modified' => 1627066083,
+    'modified' => 1626145043,
     'data' => [
         'header' => [
             'title' => 'Cyborgs',

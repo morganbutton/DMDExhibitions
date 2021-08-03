@@ -2,7 +2,11 @@
 title: "DMD300:Spring2020"
 content:
   items:
-    - "@self.children"
+    - "@taxonomy":
+        tag:
+          - student
+          - dmd
+          - capstone
   limit: 5000
   order:
     by: date

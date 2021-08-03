@@ -1,0 +1,25 @@
+form: testForm.md
+unique_id: fnitpkq8qgbyk9zurm34
+url: 'http://localhost:8080/projects'
+user: null
+timestamps:
+  created: 1627711290
+  updated: 1627711290
+data: null
+files:
+  images:
+    '05 - Copy.jpg':
+      name: '05 - Copy.jpg'
+      type: image/jpeg
+      tmp_name: phpjvHodm
+      size: 3181387
+      path: 'user/pages/10.projects/05 - Copy.jpg'
+    05.jpg:
+      name: 05.jpg
+      type: image/jpeg
+      tmp_name: phpGrUGlX
+      size: 3181387
+      path: user/pages/10.projects/05.jpg
+  images/original:
+    '05 - Copy.jpg': null
+    05.jpg: null

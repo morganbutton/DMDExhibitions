@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/html/system/blueprints/flex/user-groups.yaml',
-    'modified' => 1627066083,
+    'modified' => 1625096557,
     'data' => [
         'title' => 'User Groups',
         'description' => 'Manage your User Groups in Flex.',

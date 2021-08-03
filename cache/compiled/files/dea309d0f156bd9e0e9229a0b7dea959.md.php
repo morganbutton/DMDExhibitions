@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledMarkdownFile',
     'filename' => '/var/www/html/user/pages/09.themes/02.futures/dmd300-fall2019/blog.md',
-    'modified' => 1627066083,
+    'modified' => 1626234173,
     'data' => [
         'header' => [
             'title' => 'DMD300:Fall2019',

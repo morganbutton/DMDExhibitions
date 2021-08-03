@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/html/user/plugins/add-page-by-form/add-page-by-form.yaml',
-    'modified' => 1627066083,
+    'modified' => 1625627854,
     'data' => [
         'enabled' => true,
         'date_display_format' => 'd-m-Y H:i',

@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/html/user/themes/quark/blueprints/default.yaml',
-    'modified' => 1627066084,
+    'modified' => 1625096564,
     'data' => [
         'extends@' => 'default',
         'form' => [

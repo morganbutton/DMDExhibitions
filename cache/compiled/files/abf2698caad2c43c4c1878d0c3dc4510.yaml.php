@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/html/user/plugins/admin/languages/uk.yaml',
-    'modified' => 1627066083,
+    'modified' => 1625096574,
     'data' => [
         'PLUGIN_ADMIN' => [
             'ADMIN_NOSCRIPT_MSG' => 'Будь ласка, увімкніть JavaScript у Вашому браузері.',

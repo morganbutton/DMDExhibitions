@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/html/user/plugins/admin/languages/ku.yaml',
-    'modified' => 1627066083,
+    'modified' => 1625096574,
     'data' => [
         'PLUGIN_ADMIN' => [
             'ADMIN_BETA_MSG' => 'ئەمە وەشانی تاقیكاریە (Beta)! بۆ كاری پێشكەوتوو لەسەر ئەركی خۆت بەكاری بهێنە...',

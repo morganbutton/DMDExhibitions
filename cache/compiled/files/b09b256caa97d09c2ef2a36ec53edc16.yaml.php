@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/html/user/plugins/add-page-by-form/blueprints.yaml',
-    'modified' => 1627066083,
+    'modified' => 1625627854,
     'data' => [
         'name' => 'Add Page By Form',
         'version' => '3.0.3',
