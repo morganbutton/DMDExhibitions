@@ -39,7 +39,7 @@ form:
       multiple: true
       accept:
         - "image/*"
-    - name: youtubetxt
+    - name: Paste any text content here
       lable: pdfText
       type: textarea
       size: long
