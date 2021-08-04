@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledMarkdownFile',
     'filename' => '/var/www/html/user/pages/10.projects/form.md',
-    'modified' => 1628106898,
+    'modified' => 1628108384,
     'data' => [
         'header' => [
             'title' => 'Student Portal',
@@ -20,7 +20,7 @@ return [
                 ],
                 'youtube' => [
                     'player_parameters' => [
-                        'autoplay' => 1
+                        'autoplay' => 0
                     ]
                 ]
             ],
@@ -108,7 +108,7 @@ pagefrontmatter:
     category: blog
   youtube:
     player_parameters:
-      autoplay: 1
+      autoplay: 0
 form:
   name: testForm.md
   template: null

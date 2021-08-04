@@ -57,34 +57,36 @@ class __TwigTemplate_69a23103cb8dd7e235dff2a77529f70d8a0d169c126502494dec6fedaa0
 ";
         }
         // line 13
-        echo " <p> ";
+        echo "
+ <p> ";
+        // line 14
         echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", []), "textcontent", []), "html", null, true);
         echo " </p>
     <div class=\"e-content\">
         ";
-        // line 15
+        // line 16
         echo $this->getAttribute(($context["page"] ?? null), "content", []);
         echo "
     </div>
 
     ";
-        // line 18
+        // line 19
         if ((($this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", []), "continue_link", []) === true) && $this->getAttribute($this->getAttribute($this->getAttribute(($context["config"] ?? null), "plugins", []), "comments", []), "enabled", []))) {
-            // line 19
-            echo "        ";
-            $this->loadTemplate("partials/comments.html.twig", "partials/blog-item1.html.twig", 19)->display($context);
             // line 20
+            echo "        ";
+            $this->loadTemplate("partials/comments.html.twig", "partials/blog-item1.html.twig", 20)->display($context);
+            // line 21
             echo "    ";
         }
-        // line 21
+        // line 22
         echo "</div>
      
     ";
-        // line 23
+        // line 24
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable($this->getAttribute($this->getAttribute(($context["page"] ?? null), "media", []), "images", []));
         foreach ($context['_seq'] as $context["_key"] => $context["image"]) {
-            // line 24
+            // line 25
             echo "        ";
             echo $this->getAttribute($this->getAttribute($context["image"], "cropZoom", [0 => 800, 1 => 400], "method"), "html", []);
             echo "
@@ -93,15 +95,15 @@ class __TwigTemplate_69a23103cb8dd7e235dff2a77529f70d8a0d169c126502494dec6fedaa0
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['image'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 26
+        // line 27
         echo "    
      
 
 <p class=\"prev-next text-center\">
     ";
-        // line 30
+        // line 31
         if ( !$this->getAttribute(($context["page"] ?? null), "isLast", [])) {
-            // line 31
+            // line 32
             echo "            <a class=\"btn\" href=\"";
             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "prevSibling", []), "url", []), "html", null, true);
             echo "\"><i class=\"fa fa-angle-left\"></i> ";
@@ -109,12 +111,12 @@ class __TwigTemplate_69a23103cb8dd7e235dff2a77529f70d8a0d169c126502494dec6fedaa0
             echo "</a>
     ";
         }
-        // line 33
+        // line 34
         echo "
     ";
-        // line 34
+        // line 35
         if ( !$this->getAttribute(($context["page"] ?? null), "isFirst", [])) {
-            // line 35
+            // line 36
             echo "        <a class=\"btn\" href=\"";
             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "nextSibling", []), "url", []), "html", null, true);
             echo "\">";
@@ -122,7 +124,7 @@ class __TwigTemplate_69a23103cb8dd7e235dff2a77529f70d8a0d169c126502494dec6fedaa0
             echo " <i class=\"fa fa-angle-right\"></i></a>
     ";
         }
-        // line 37
+        // line 38
         echo "</p>
 ";
     }
@@ -139,7 +141,7 @@ class __TwigTemplate_69a23103cb8dd7e235dff2a77529f70d8a0d169c126502494dec6fedaa0
 
     public function getDebugInfo()
     {
-        return array (  126 => 37,  118 => 35,  116 => 34,  113 => 33,  105 => 31,  103 => 30,  97 => 26,  88 => 24,  84 => 23,  80 => 21,  77 => 20,  74 => 19,  72 => 18,  66 => 15,  60 => 13,  56 => 11,  53 => 10,  50 => 9,  44 => 7,  41 => 6,  39 => 5,  36 => 4,  34 => 3,  30 => 1,);
+        return array (  128 => 38,  120 => 36,  118 => 35,  115 => 34,  107 => 32,  105 => 31,  99 => 27,  90 => 25,  86 => 24,  82 => 22,  79 => 21,  76 => 20,  74 => 19,  68 => 16,  63 => 14,  60 => 13,  56 => 11,  53 => 10,  50 => 9,  44 => 7,  41 => 6,  39 => 5,  36 => 4,  34 => 3,  30 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -164,6 +166,7 @@ class __TwigTemplate_69a23103cb8dd7e235dff2a77529f70d8a0d169c126502494dec6fedaa0
         {% include 'partials/blog/taxonomy.html.twig' %}
     </div>
 {% endif %}
+
  <p> {{ page.header.textcontent }} </p>
     <div class=\"e-content\">
         {{ page.content|raw }}

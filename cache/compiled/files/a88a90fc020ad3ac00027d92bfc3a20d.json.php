@@ -2,11 +2,11 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledJsonFile',
     'filename' => '/var/www/html/user/data/flex/indexes/pages.json',
-    'modified' => 1628107956,
+    'modified' => 1628108931,
     'data' => [
         'version' => '1.5',
-        'timestamp' => 1628107959,
-        'count' => 61,
+        'timestamp' => 1628108934,
+        'count' => 63,
         'index' => [
             '' => [
                 'key' => '',
@@ -204,15 +204,17 @@ return [
                 'key' => 'projects',
                 'storage_key' => '10.projects',
                 'template' => 'form',
-                'storage_timestamp' => 1628107465,
+                'storage_timestamp' => 1628108447,
                 'markdown' => [
                     '' => [
-                        'form' => 1628106898
+                        'form' => 1628108384
                     ]
                 ],
                 'children' => [
                     'aliens' => 1628008676,
+                    'apples' => 1628108362,
                     'author' => 1628107466,
+                    'autoplaytest' => 1628108448,
                     'comfycouch' => 1628008676,
                     'dmd100' => 1628008676,
                     'fun' => 1628008676,
@@ -257,7 +259,7 @@ return [
                     'youtub' => 1628008678,
                     'youtube' => 1627710884
                 ],
-                'checksum' => '5b4523ba5a0ea6ad6da8dc0f2ed406ab'
+                'checksum' => '211e91c7e7d53dc1c4027ac09e485ca0'
             ],
             '10.projects/aliens' => [
                 'key' => 'projects/aliens',
@@ -271,6 +273,18 @@ return [
                 ],
                 'checksum' => '360674bdad03b4d8131c6b8d1fd46295'
             ],
+            '10.projects/apples' => [
+                'key' => 'projects/apples',
+                'storage_key' => '10.projects/apples',
+                'template' => 'testForm',
+                'storage_timestamp' => 1628108362,
+                'markdown' => [
+                    '' => [
+                        'testForm' => 1628108362
+                    ]
+                ],
+                'checksum' => '4d41441704bb233091596d5cdc81bfdc'
+            ],
             '10.projects/author' => [
                 'key' => 'projects/author',
                 'storage_key' => '10.projects/author',
@@ -282,6 +296,18 @@ return [
                     ]
                 ],
                 'checksum' => '76dcbbf0b6506f91b1dae16014376226'
+            ],
+            '10.projects/autoplaytest' => [
+                'key' => 'projects/autoplaytest',
+                'storage_key' => '10.projects/autoplaytest',
+                'template' => 'testForm',
+                'storage_timestamp' => 1628108448,
+                'markdown' => [
+                    '' => [
+                        'testForm' => 1628108448
+                    ]
+                ],
+                'checksum' => 'be587fe5afc98c6b43540aa926780b16'
             ],
             '10.projects/comfycouch' => [
                 'key' => 'projects/comfycouch',

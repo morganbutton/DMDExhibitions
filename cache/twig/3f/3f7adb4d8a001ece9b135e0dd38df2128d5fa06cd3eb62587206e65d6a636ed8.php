@@ -69,7 +69,7 @@ class __TwigTemplate_ae58bb188cd577e782115a3ebcfd2a8e85f4858f20f1d870a684f757dea
             echo "</h2>
               <h3 >";
             // line 14
-            echo twig_escape_filter($this->env, $this->getAttribute(($context["page"] ?? null), "author", []), "html", null, true);
+            echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", []), "author", []), "html", null, true);
             echo "</h3>
            
             ";
@@ -115,7 +115,7 @@ class __TwigTemplate_ae58bb188cd577e782115a3ebcfd2a8e85f4858f20f1d870a684f757dea
         echo "    
         ";
         // line 34
-        $this->loadTemplate("testForm.html.twig", "testForm.html.twig", 34, "2146653021")->display($context);
+        $this->loadTemplate("testForm.html.twig", "testForm.html.twig", 34, "651567196")->display($context);
         // line 45
         echo "   
 
@@ -162,7 +162,7 @@ class __TwigTemplate_ae58bb188cd577e782115a3ebcfd2a8e85f4858f20f1d870a684f757dea
         {% set content %}
             <h1>{{ page.title }}</h1>
             <h2>{{ page.header.subtitle }}</h2>
-              <h3 >{{ page.author }}</h3>
+              <h3 >{{ page.header.author }}</h3>
            
             {% include 'partials/blog/date.html.twig' %}
             {% include 'partials/blog/taxonomy.html.twig' %}
@@ -204,7 +204,7 @@ class __TwigTemplate_ae58bb188cd577e782115a3ebcfd2a8e85f4858f20f1d870a684f757dea
 
 
 /* testForm.html.twig */
-class __TwigTemplate_ae58bb188cd577e782115a3ebcfd2a8e85f4858f20f1d870a684f757dea472ac___2146653021 extends \Twig\Template
+class __TwigTemplate_ae58bb188cd577e782115a3ebcfd2a8e85f4858f20f1d870a684f757dea472ac___651567196 extends \Twig\Template
 {
     public function __construct(Environment $env)
     {
@@ -286,7 +286,7 @@ class __TwigTemplate_ae58bb188cd577e782115a3ebcfd2a8e85f4858f20f1d870a684f757dea
         {% set content %}
             <h1>{{ page.title }}</h1>
             <h2>{{ page.header.subtitle }}</h2>
-              <h3 >{{ page.author }}</h3>
+              <h3 >{{ page.header.author }}</h3>
            
             {% include 'partials/blog/date.html.twig' %}
             {% include 'partials/blog/taxonomy.html.twig' %}
