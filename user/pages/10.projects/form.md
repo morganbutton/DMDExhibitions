@@ -12,7 +12,7 @@ pagefrontmatter:
     category: blog
   youtube:
     player_parameters:
-      autoplay: 1
+      autoplay: 0
 form:
   name: testForm.md
   template: null
