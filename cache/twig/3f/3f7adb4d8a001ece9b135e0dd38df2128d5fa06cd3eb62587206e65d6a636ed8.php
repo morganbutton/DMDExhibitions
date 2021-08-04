@@ -67,10 +67,7 @@ class __TwigTemplate_ae58bb188cd577e782115a3ebcfd2a8e85f4858f20f1d870a684f757dea
             // line 13
             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", []), "subtitle", []), "html", null, true);
             echo "</h2>
-              <h3 >";
-            // line 14
-            echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", []), "author", []), "html", null, true);
-            echo "</h3>
+              
            
             ";
             // line 16
@@ -115,7 +112,7 @@ class __TwigTemplate_ae58bb188cd577e782115a3ebcfd2a8e85f4858f20f1d870a684f757dea
         echo "    
         ";
         // line 34
-        $this->loadTemplate("testForm.html.twig", "testForm.html.twig", 34, "651567196")->display($context);
+        $this->loadTemplate("testForm.html.twig", "testForm.html.twig", 34, "2119402264")->display($context);
         // line 45
         echo "   
 
@@ -136,7 +133,7 @@ class __TwigTemplate_ae58bb188cd577e782115a3ebcfd2a8e85f4858f20f1d870a684f757dea
 
     public function getDebugInfo()
     {
-        return array (  120 => 45,  118 => 34,  115 => 33,  112 => 32,  109 => 31,  107 => 30,  101 => 27,  98 => 26,  95 => 25,  89 => 21,  86 => 20,  82 => 18,  79 => 17,  77 => 16,  72 => 14,  68 => 13,  63 => 12,  60 => 11,  57 => 10,  54 => 9,  51 => 8,  46 => 1,  44 => 6,  42 => 5,  40 => 4,  38 => 3,  36 => 2,  30 => 1,);
+        return array (  117 => 45,  115 => 34,  112 => 33,  109 => 32,  106 => 31,  104 => 30,  98 => 27,  95 => 26,  92 => 25,  86 => 21,  83 => 20,  79 => 18,  76 => 17,  74 => 16,  68 => 13,  63 => 12,  60 => 11,  57 => 10,  54 => 9,  51 => 8,  46 => 1,  44 => 6,  42 => 5,  40 => 4,  38 => 3,  36 => 2,  30 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -162,7 +159,7 @@ class __TwigTemplate_ae58bb188cd577e782115a3ebcfd2a8e85f4858f20f1d870a684f757dea
         {% set content %}
             <h1>{{ page.title }}</h1>
             <h2>{{ page.header.subtitle }}</h2>
-              <h3 >{{ page.header.author }}</h3>
+              
            
             {% include 'partials/blog/date.html.twig' %}
             {% include 'partials/blog/taxonomy.html.twig' %}
@@ -204,7 +201,7 @@ class __TwigTemplate_ae58bb188cd577e782115a3ebcfd2a8e85f4858f20f1d870a684f757dea
 
 
 /* testForm.html.twig */
-class __TwigTemplate_ae58bb188cd577e782115a3ebcfd2a8e85f4858f20f1d870a684f757dea472ac___651567196 extends \Twig\Template
+class __TwigTemplate_ae58bb188cd577e782115a3ebcfd2a8e85f4858f20f1d870a684f757dea472ac___2119402264 extends \Twig\Template
 {
     public function __construct(Environment $env)
     {
@@ -260,7 +257,7 @@ class __TwigTemplate_ae58bb188cd577e782115a3ebcfd2a8e85f4858f20f1d870a684f757dea
 
     public function getDebugInfo()
     {
-        return array (  248 => 43,  245 => 42,  242 => 41,  238 => 37,  235 => 36,  232 => 35,  222 => 34,  120 => 45,  118 => 34,  115 => 33,  112 => 32,  109 => 31,  107 => 30,  101 => 27,  98 => 26,  95 => 25,  89 => 21,  86 => 20,  82 => 18,  79 => 17,  77 => 16,  72 => 14,  68 => 13,  63 => 12,  60 => 11,  57 => 10,  54 => 9,  51 => 8,  46 => 1,  44 => 6,  42 => 5,  40 => 4,  38 => 3,  36 => 2,  30 => 1,);
+        return array (  245 => 43,  242 => 42,  239 => 41,  235 => 37,  232 => 36,  229 => 35,  219 => 34,  117 => 45,  115 => 34,  112 => 33,  109 => 32,  106 => 31,  104 => 30,  98 => 27,  95 => 26,  92 => 25,  86 => 21,  83 => 20,  79 => 18,  76 => 17,  74 => 16,  68 => 13,  63 => 12,  60 => 11,  57 => 10,  54 => 9,  51 => 8,  46 => 1,  44 => 6,  42 => 5,  40 => 4,  38 => 3,  36 => 2,  30 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -286,7 +283,7 @@ class __TwigTemplate_ae58bb188cd577e782115a3ebcfd2a8e85f4858f20f1d870a684f757dea
         {% set content %}
             <h1>{{ page.title }}</h1>
             <h2>{{ page.header.subtitle }}</h2>
-              <h3 >{{ page.header.author }}</h3>
+              
            
             {% include 'partials/blog/date.html.twig' %}
             {% include 'partials/blog/taxonomy.html.twig' %}

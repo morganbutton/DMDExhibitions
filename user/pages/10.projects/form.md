@@ -28,8 +28,13 @@ form:
     - name: taxonomy.tag
       label: "Content Tags (comma separated)"
       type: text
+    - name: textcontent
+      label: Text
+      type: textarea
+      size: long
+      classes: text
     - name: content
-      label: "<i>Youtube Embed Format  (When uploading more than one Youtube Video copy and paste each embed on its own line):</i> <br> <b>[plugin:youtube](https://www.youtube.com/watch?v=BK8guP9ov2U)</b><br>  "
+      label: "Youtube Embed Format: <br><b> [plugin:youtube](https://www.youtube.com/watch?v=BK8guP9ov2U)</b><br> (When uploading more than one Youtube Video copy and paste each embed on its own line)"
       type: textarea
       size: long
       classes: text
@@ -39,17 +44,18 @@ form:
       multiple: true
       accept:
         - "image/*"
-    - name: textcontent
-      lable: textcontent
-      type: textarea
-      size: long
-      classes: text
     - name: audio
       label: "Audio File"
       type: file
       multiple: true
       accept:
         - "audio/*"
+    - name: audioembed
+      label: "Audio Embed Format:<br><b> ![Student audio file](hal9000.mp3)</B> <br>
+      (When uploading more than one audio file copy and paste each embed on its own line)"
+      type: textarea
+      size: long
+      classes: text
   buttons:
     - type: submit
       value: Submit
@@ -60,5 +66,3 @@ twig_first: true
 ---
 
 ## Student work upload form
-
-To use this form ask your teacher for the cheetsheet and content tags.
