@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/html/user/config/site.yaml',
-    'modified' => 1626145043,
+    'modified' => 1628118090,
     'data' => [
         'title' => 'Grav',
         'author' => [
@@ -15,8 +15,7 @@ return [
         'taxonomies' => [
             0 => 'tag',
             1 => 'theme',
-            2 => 'type',
-            3 => 'imageName'
+            2 => 'type'
         ]
     ]
 ];

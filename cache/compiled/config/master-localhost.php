@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1628107008,
-    'checksum' => '5b19930404cf737448ee13ea75743022',
+    'timestamp' => 1628120580,
+    'checksum' => '91ce3f9eee57421bcbcad542ea803d06',
     'files' => [
         'user/config' => [
             'media' => [
@@ -19,11 +19,15 @@ return [
             ],
             'site' => [
                 'file' => 'user/config/site.yaml',
-                'modified' => 1626145043
+                'modified' => 1628118090
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1628107002
+                'modified' => 1628120064
+            ],
+            'themes/quark' => [
+                'file' => 'user/config/themes/quark.yaml',
+                'modified' => 1628120577
             ],
             'versions' => [
                 'file' => 'user/config/versions.yaml',
@@ -124,6 +128,17 @@ return [
                 'spectre' => [
                     'exp' => false,
                     'icons' => false
+                ],
+                'custom_logo' => [
+                    'user/themes/quark/images/logo/dmd-logo.svg' => [
+                        'name' => 'dmd-logo.svg',
+                        'type' => 'image/svg+xml',
+                        'size' => 14696,
+                        'path' => 'user/themes/quark/images/logo/dmd-logo.svg'
+                    ]
+                ],
+                'custom_logo_mobile' => [
+                    
                 ]
             ]
         ],
@@ -929,8 +944,7 @@ node_modules'
             'taxonomies' => [
                 0 => 'tag',
                 1 => 'theme',
-                2 => 'type',
-                3 => 'imageName'
+                2 => 'type'
             ],
             'metadata' => [
                 'description' => 'Grav is an easy to use, yet powerful, open source flat-file CMS'

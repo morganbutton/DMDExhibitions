@@ -12,6 +12,7 @@
 {% endif %}
 
  <p> {{ page.header.textcontent }} </p>
+ {% if page.header.audioembed %} {% markdown %}{{ page.header.audioembed|e }} {% endmarkdown %} {% endif %}
    
     <div class="e-content">
         {{ page.content|raw }}
@@ -25,7 +26,7 @@
     {% for image in page.media.images %}
         {{ image.cropZoom(800,400).html|raw }}
     {% endfor %}
-   {% if page.header.audioembed %} {% markdown %}{{ page.header.audioembed|e }} {% endmarkdown %} {% endif %}
+   
    
     
      
