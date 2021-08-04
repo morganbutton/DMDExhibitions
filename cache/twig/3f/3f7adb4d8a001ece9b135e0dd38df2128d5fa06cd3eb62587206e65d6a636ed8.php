@@ -67,51 +67,52 @@ class __TwigTemplate_ae58bb188cd577e782115a3ebcfd2a8e85f4858f20f1d870a684f757dea
             // line 13
             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", []), "subtitle", []), "html", null, true);
             echo "</h2>
+           
             ";
-            // line 14
-            $this->loadTemplate("partials/blog/date.html.twig", "testForm.html.twig", 14)->display($context);
             // line 15
-            echo "            ";
-            $this->loadTemplate("partials/blog/taxonomy.html.twig", "testForm.html.twig", 15)->display($context);
+            $this->loadTemplate("partials/blog/date.html.twig", "testForm.html.twig", 15)->display($context);
             // line 16
+            echo "            ";
+            $this->loadTemplate("partials/blog/taxonomy.html.twig", "testForm.html.twig", 16)->display($context);
+            // line 17
             echo "            
         ";
             $context["content"] = ('' === $tmp = ob_get_clean()) ? '' : new Markup($tmp, $this->env->getCharset());
-            // line 18
-            echo "        ";
-            $this->loadTemplate("partials/hero.html.twig", "testForm.html.twig", 18)->display(twig_array_merge($context, ["id" => "blog-hero"]));
             // line 19
+            echo "        ";
+            $this->loadTemplate("partials/hero.html.twig", "testForm.html.twig", 19)->display(twig_array_merge($context, ["id" => "blog-hero"]));
+            // line 20
             echo "
     ";
         }
     }
 
-    // line 23
+    // line 24
     public function block_body($context, array $blocks = [])
     {
-        // line 24
+        // line 25
         echo "<section id=\"body-wrapper\" class=\"section blog-listing\">
     <section class=\"container ";
-        // line 25
+        // line 26
         echo twig_escape_filter($this->env, ($context["grid_size"] ?? null), "html", null, true);
         echo "\">
     
 
         ";
-        // line 28
+        // line 29
         if ((($context["show_breadcrumbs"] ?? null) && $this->getAttribute($this->getAttribute($this->getAttribute(($context["config"] ?? null), "plugins", []), "breadcrumbs", []), "enabled", []))) {
-            // line 29
-            echo "            ";
-            $this->loadTemplate("partials/breadcrumbs.html.twig", "testForm.html.twig", 29)->display($context);
             // line 30
+            echo "            ";
+            $this->loadTemplate("partials/breadcrumbs.html.twig", "testForm.html.twig", 30)->display($context);
+            // line 31
             echo "        ";
         }
-        // line 31
+        // line 32
         echo "    
         ";
-        // line 32
-        $this->loadTemplate("testForm.html.twig", "testForm.html.twig", 32, "1575299481")->display($context);
-        // line 43
+        // line 33
+        $this->loadTemplate("testForm.html.twig", "testForm.html.twig", 33, "1164997784")->display($context);
+        // line 44
         echo "   
 
     </section>
@@ -131,7 +132,7 @@ class __TwigTemplate_ae58bb188cd577e782115a3ebcfd2a8e85f4858f20f1d870a684f757dea
 
     public function getDebugInfo()
     {
-        return array (  115 => 43,  113 => 32,  110 => 31,  107 => 30,  104 => 29,  102 => 28,  96 => 25,  93 => 24,  90 => 23,  84 => 19,  81 => 18,  77 => 16,  74 => 15,  72 => 14,  68 => 13,  63 => 12,  60 => 11,  57 => 10,  54 => 9,  51 => 8,  46 => 1,  44 => 6,  42 => 5,  40 => 4,  38 => 3,  36 => 2,  30 => 1,);
+        return array (  116 => 44,  114 => 33,  111 => 32,  108 => 31,  105 => 30,  103 => 29,  97 => 26,  94 => 25,  91 => 24,  85 => 20,  82 => 19,  78 => 17,  75 => 16,  73 => 15,  68 => 13,  63 => 12,  60 => 11,  57 => 10,  54 => 9,  51 => 8,  46 => 1,  44 => 6,  42 => 5,  40 => 4,  38 => 3,  36 => 2,  30 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -157,6 +158,7 @@ class __TwigTemplate_ae58bb188cd577e782115a3ebcfd2a8e85f4858f20f1d870a684f757dea
         {% set content %}
             <h1>{{ page.title }}</h1>
             <h2>{{ page.header.subtitle }}</h2>
+           
             {% include 'partials/blog/date.html.twig' %}
             {% include 'partials/blog/taxonomy.html.twig' %}
             
@@ -197,7 +199,7 @@ class __TwigTemplate_ae58bb188cd577e782115a3ebcfd2a8e85f4858f20f1d870a684f757dea
 
 
 /* testForm.html.twig */
-class __TwigTemplate_ae58bb188cd577e782115a3ebcfd2a8e85f4858f20f1d870a684f757dea472ac___1575299481 extends \Twig\Template
+class __TwigTemplate_ae58bb188cd577e782115a3ebcfd2a8e85f4858f20f1d870a684f757dea472ac___1164997784 extends \Twig\Template
 {
     public function __construct(Environment $env)
     {
@@ -211,33 +213,33 @@ class __TwigTemplate_ae58bb188cd577e782115a3ebcfd2a8e85f4858f20f1d870a684f757dea
 
     protected function doGetParent(array $context)
     {
-        // line 32
+        // line 33
         return "partials/layout.html.twig";
     }
 
     protected function doDisplay(array $context, array $blocks = [])
     {
-        $this->parent = $this->loadTemplate("partials/layout.html.twig", "testForm.html.twig", 32);
+        $this->parent = $this->loadTemplate("partials/layout.html.twig", "testForm.html.twig", 33);
         $this->parent->display($context, array_merge($this->blocks, $blocks));
     }
 
-    // line 33
+    // line 34
     public function block_item($context, array $blocks = [])
     {
-        // line 34
-        echo "                ";
-        $this->loadTemplate("partials/blog-item1.html.twig", "testForm.html.twig", 34)->display($context);
         // line 35
+        echo "                ";
+        $this->loadTemplate("partials/blog-item1.html.twig", "testForm.html.twig", 35)->display($context);
+        // line 36
         echo "            ";
     }
 
-    // line 39
+    // line 40
     public function block_sidebar($context, array $blocks = [])
     {
-        // line 40
-        echo "                ";
-        $this->loadTemplate("partials/sidebar.html.twig", "testForm.html.twig", 40)->display($context);
         // line 41
+        echo "                ";
+        $this->loadTemplate("partials/sidebar.html.twig", "testForm.html.twig", 41)->display($context);
+        // line 42
         echo "            ";
     }
 
@@ -253,7 +255,7 @@ class __TwigTemplate_ae58bb188cd577e782115a3ebcfd2a8e85f4858f20f1d870a684f757dea
 
     public function getDebugInfo()
     {
-        return array (  241 => 41,  238 => 40,  235 => 39,  231 => 35,  228 => 34,  225 => 33,  215 => 32,  115 => 43,  113 => 32,  110 => 31,  107 => 30,  104 => 29,  102 => 28,  96 => 25,  93 => 24,  90 => 23,  84 => 19,  81 => 18,  77 => 16,  74 => 15,  72 => 14,  68 => 13,  63 => 12,  60 => 11,  57 => 10,  54 => 9,  51 => 8,  46 => 1,  44 => 6,  42 => 5,  40 => 4,  38 => 3,  36 => 2,  30 => 1,);
+        return array (  243 => 42,  240 => 41,  237 => 40,  233 => 36,  230 => 35,  227 => 34,  217 => 33,  116 => 44,  114 => 33,  111 => 32,  108 => 31,  105 => 30,  103 => 29,  97 => 26,  94 => 25,  91 => 24,  85 => 20,  82 => 19,  78 => 17,  75 => 16,  73 => 15,  68 => 13,  63 => 12,  60 => 11,  57 => 10,  54 => 9,  51 => 8,  46 => 1,  44 => 6,  42 => 5,  40 => 4,  38 => 3,  36 => 2,  30 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -279,6 +281,7 @@ class __TwigTemplate_ae58bb188cd577e782115a3ebcfd2a8e85f4858f20f1d870a684f757dea
         {% set content %}
             <h1>{{ page.title }}</h1>
             <h2>{{ page.header.subtitle }}</h2>
+           
             {% include 'partials/blog/date.html.twig' %}
             {% include 'partials/blog/taxonomy.html.twig' %}
             

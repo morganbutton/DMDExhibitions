@@ -10,6 +10,7 @@
         {% include 'partials/blog/taxonomy.html.twig' %}
     </div>
 {% endif %}
+ <p> {{ page.header.textcontent }} </p>
     <div class="e-content">
         {{ page.content|raw }}
     </div>
@@ -22,7 +23,9 @@
     {% for image in page.media.images %}
         {{ image.cropZoom(800,400).html|raw }}
     {% endfor %}
-     {% if page.header.youtubetxt %}{% markdown %}{{page.header.youtubetxt|e}}{% endmarkdown %}{% endif %}
+    
+     
+
 <p class="prev-next text-center">
     {% if not page.isLast %}
             <a class="btn" href="{{ page.prevSibling.url }}"><i class="fa fa-angle-left"></i> {{ 'THEME_QUARK.BLOG.ITEM.PREV_POST'|t }}</a>

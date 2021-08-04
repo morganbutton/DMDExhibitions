@@ -39,8 +39,8 @@ form:
       multiple: true
       accept:
         - "image/*"
-    - name: Paste any text content here
-      lable: pdfText
+    - name: textcontent
+      lable: textcontent
       type: textarea
       size: long
       classes: text

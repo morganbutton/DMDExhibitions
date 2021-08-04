@@ -57,31 +57,34 @@ class __TwigTemplate_69a23103cb8dd7e235dff2a77529f70d8a0d169c126502494dec6fedaa0
 ";
         }
         // line 13
-        echo "    <div class=\"e-content\">
+        echo " <p> ";
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", []), "textcontent", []), "html", null, true);
+        echo " </p>
+    <div class=\"e-content\">
         ";
-        // line 14
+        // line 15
         echo $this->getAttribute(($context["page"] ?? null), "content", []);
         echo "
     </div>
 
     ";
-        // line 17
+        // line 18
         if ((($this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", []), "continue_link", []) === true) && $this->getAttribute($this->getAttribute($this->getAttribute(($context["config"] ?? null), "plugins", []), "comments", []), "enabled", []))) {
-            // line 18
-            echo "        ";
-            $this->loadTemplate("partials/comments.html.twig", "partials/blog-item1.html.twig", 18)->display($context);
             // line 19
+            echo "        ";
+            $this->loadTemplate("partials/comments.html.twig", "partials/blog-item1.html.twig", 19)->display($context);
+            // line 20
             echo "    ";
         }
-        // line 20
+        // line 21
         echo "</div>
      
     ";
-        // line 22
+        // line 23
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable($this->getAttribute($this->getAttribute(($context["page"] ?? null), "media", []), "images", []));
         foreach ($context['_seq'] as $context["_key"] => $context["image"]) {
-            // line 23
+            // line 24
             echo "        ";
             echo $this->getAttribute($this->getAttribute($context["image"], "cropZoom", [0 => 800, 1 => 400], "method"), "html", []);
             echo "
@@ -90,24 +93,15 @@ class __TwigTemplate_69a23103cb8dd7e235dff2a77529f70d8a0d169c126502494dec6fedaa0
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['image'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 25
-        echo "     ";
-        if ($this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", []), "youtubetxt", [])) {
-            ob_start();
-            echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", []), "youtubetxt", []));
-            $content = ob_get_clean();
-            preg_match("/^\s*/", $content, $matches);
-            $lines = explode("\n", $content);
-            $content = preg_replace('/^' . $matches[0]. '/', "", $lines);
-            $content = join("\n", $content);
-            echo $this->env->getExtension('Grav\Common\Twig\Extension\GravExtension')->markdownFunction($context, $content);
-        }
         // line 26
-        echo "<p class=\"prev-next text-center\">
+        echo "    
+     
+
+<p class=\"prev-next text-center\">
     ";
-        // line 27
+        // line 30
         if ( !$this->getAttribute(($context["page"] ?? null), "isLast", [])) {
-            // line 28
+            // line 31
             echo "            <a class=\"btn\" href=\"";
             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "prevSibling", []), "url", []), "html", null, true);
             echo "\"><i class=\"fa fa-angle-left\"></i> ";
@@ -115,12 +109,12 @@ class __TwigTemplate_69a23103cb8dd7e235dff2a77529f70d8a0d169c126502494dec6fedaa0
             echo "</a>
     ";
         }
-        // line 30
+        // line 33
         echo "
     ";
-        // line 31
+        // line 34
         if ( !$this->getAttribute(($context["page"] ?? null), "isFirst", [])) {
-            // line 32
+            // line 35
             echo "        <a class=\"btn\" href=\"";
             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "nextSibling", []), "url", []), "html", null, true);
             echo "\">";
@@ -128,7 +122,7 @@ class __TwigTemplate_69a23103cb8dd7e235dff2a77529f70d8a0d169c126502494dec6fedaa0
             echo " <i class=\"fa fa-angle-right\"></i></a>
     ";
         }
-        // line 34
+        // line 37
         echo "</p>
 ";
     }
@@ -145,7 +139,7 @@ class __TwigTemplate_69a23103cb8dd7e235dff2a77529f70d8a0d169c126502494dec6fedaa0
 
     public function getDebugInfo()
     {
-        return array (  132 => 34,  124 => 32,  122 => 31,  119 => 30,  111 => 28,  109 => 27,  106 => 26,  94 => 25,  85 => 23,  81 => 22,  77 => 20,  74 => 19,  71 => 18,  69 => 17,  63 => 14,  60 => 13,  56 => 11,  53 => 10,  50 => 9,  44 => 7,  41 => 6,  39 => 5,  36 => 4,  34 => 3,  30 => 1,);
+        return array (  126 => 37,  118 => 35,  116 => 34,  113 => 33,  105 => 31,  103 => 30,  97 => 26,  88 => 24,  84 => 23,  80 => 21,  77 => 20,  74 => 19,  72 => 18,  66 => 15,  60 => 13,  56 => 11,  53 => 10,  50 => 9,  44 => 7,  41 => 6,  39 => 5,  36 => 4,  34 => 3,  30 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -170,6 +164,7 @@ class __TwigTemplate_69a23103cb8dd7e235dff2a77529f70d8a0d169c126502494dec6fedaa0
         {% include 'partials/blog/taxonomy.html.twig' %}
     </div>
 {% endif %}
+ <p> {{ page.header.textcontent }} </p>
     <div class=\"e-content\">
         {{ page.content|raw }}
     </div>
@@ -182,7 +177,9 @@ class __TwigTemplate_69a23103cb8dd7e235dff2a77529f70d8a0d169c126502494dec6fedaa0
     {% for image in page.media.images %}
         {{ image.cropZoom(800,400).html|raw }}
     {% endfor %}
-     {% if page.header.youtubetxt %}{% markdown %}{{page.header.youtubetxt|e}}{% endmarkdown %}{% endif %}
+    
+     
+
 <p class=\"prev-next text-center\">
     {% if not page.isLast %}
             <a class=\"btn\" href=\"{{ page.prevSibling.url }}\"><i class=\"fa fa-angle-left\"></i> {{ 'THEME_QUARK.BLOG.ITEM.PREV_POST'|t }}</a>
