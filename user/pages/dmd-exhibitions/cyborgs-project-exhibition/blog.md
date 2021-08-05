@@ -2,8 +2,12 @@
 title: "CYBORGS PROJECT EXHIBITION FALL 2020"
 content:
   items:
-    - "@self.children"
-  limit: 5
+    - "@taxonomy":
+        tag:
+          - fall2020
+          - dmd300
+          - cyborgs
+  limit: 5000
   order:
     by: date
     dir: desc
