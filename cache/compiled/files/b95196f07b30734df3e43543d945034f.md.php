@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledMarkdownFile',
     'filename' => '/var/www/html/user/pages/dmd-exhibitions/capstone-project-exhibition-spring-2020/blog.md',
-    'modified' => 1628124821,
+    'modified' => 1628125040,
     'data' => [
         'header' => [
             'title' => 'CAPSTONE PROJECT EXHIBITION SPRING 2020',
@@ -51,7 +51,7 @@ taxonomy:
   tag:
     - dmd400
     - capstone',
-        'markdown' => '![dmd300-fa20-exhibition](../../exhibitionimages/cyborgs.jpg?cropResize=300,300 "dmd300-fa20-exhibition")
+        'markdown' => '![dmd400-sp20-exhibition](../../exhibitionimages/CAPSTONESPRING2020.png?cropResize=300,300 "dmd400-sp20-exhibition")
 
 ===
 

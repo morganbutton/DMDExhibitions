@@ -12,6 +12,9 @@
 {% endif %}
 
  <p> {{ page.header.textcontent }} </p>
+  
+
+  {% if page.header.attachments %} {% markdown %}{{ page.header.attachmentembed|e }}{% endmarkdown %} {% endif %}
  {% if page.header.audioembed %} {% markdown %}{{ page.header.audioembed|e }} {% endmarkdown %} {% endif %}
    
     <div class="e-content">

@@ -34,7 +34,18 @@ form:
       size: long
       classes: text
     - name: content
-      label: "Youtube Embed Format: <br><b> [plugin:youtube](https://www.youtube.com/watch?v=fJC92FyMifI)</b><br> (When uploading more than one Youtube video copy and paste each embed on its own line)"
+      label: "Youtube Embed Format: <br><b> [plugin:youtube](https://www.youtube.com/watch?v=fJC92FyMifI)</b><br> (When uploading more than one Youtube video copy and paste each embed on its own line)  <br> <b> (Only fill this out if you have a youtube link) </b>"
+      type: textarea
+      size: long
+      classes: text
+    - name: attachments
+      label: "Attachment (PDF only) (no numbers special characters underscore or dashes)"
+      type: file
+      multiple: true
+      accept:
+        - application/pdf
+    - name: attachmentembed
+      label: "PDF Embed Format:<br><b> [pdf attachment](pasteyourfilenamehere.pdf)</b> <br> (When uploading more than one pdf file, copy and paste each embed on its own line.) <br> <b> (Only fill this out if you have a PDF file) </b>"
       type: textarea
       size: long
       classes: text
@@ -51,7 +62,7 @@ form:
       accept:
         - "audio/*"
     - name: audioembed
-      label: "Audio Embed Format:<br><b> ![Student audio file](pasteyourfilenamehere.mp3)</B> <br> (When uploading more than one audio file, copy and paste each embed on its own line. dont forget to edit the audio file type if necessary)"
+      label: "Audio Embed Format:<br><b> ![Student audio file](pasteyourfilenamehere.mp3)</b> <br> (When uploading more than one audio file, copy and paste each embed on its own line. dont forget to edit the audio file type if necessary) <br> <b> (Only fill this out if you have an audio file) </b>"
       type: textarea
       size: long
       classes: text

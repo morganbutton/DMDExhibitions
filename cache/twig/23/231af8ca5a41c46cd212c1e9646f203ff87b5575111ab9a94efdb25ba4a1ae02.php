@@ -62,8 +62,24 @@ class __TwigTemplate_69a23103cb8dd7e235dff2a77529f70d8a0d169c126502494dec6fedaa0
         // line 14
         echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", []), "textcontent", []), "html", null, true);
         echo " </p>
- ";
-        // line 15
+  
+
+  ";
+        // line 17
+        if ($this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", []), "attachments", [])) {
+            echo " ";
+            ob_start();
+            echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", []), "attachmentembed", []));
+            $content = ob_get_clean();
+            preg_match("/^\s*/", $content, $matches);
+            $lines = explode("\n", $content);
+            $content = preg_replace('/^' . $matches[0]. '/', "", $lines);
+            $content = join("\n", $content);
+            echo $this->env->getExtension('Grav\Common\Twig\Extension\GravExtension')->markdownFunction($context, $content);
+            echo " ";
+        }
+        // line 18
+        echo " ";
         if ($this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", []), "audioembed", [])) {
             echo " ";
             ob_start();
@@ -77,33 +93,33 @@ class __TwigTemplate_69a23103cb8dd7e235dff2a77529f70d8a0d169c126502494dec6fedaa0
             echo $this->env->getExtension('Grav\Common\Twig\Extension\GravExtension')->markdownFunction($context, $content);
             echo " ";
         }
-        // line 16
+        // line 19
         echo "   
     <div class=\"e-content\">
         ";
-        // line 18
+        // line 21
         echo $this->getAttribute(($context["page"] ?? null), "content", []);
         echo "
     </div>
 
     ";
-        // line 21
+        // line 24
         if ((($this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", []), "continue_link", []) === true) && $this->getAttribute($this->getAttribute($this->getAttribute(($context["config"] ?? null), "plugins", []), "comments", []), "enabled", []))) {
-            // line 22
+            // line 25
             echo "        ";
-            $this->loadTemplate("partials/comments.html.twig", "partials/blog-item1.html.twig", 22)->display($context);
-            // line 23
+            $this->loadTemplate("partials/comments.html.twig", "partials/blog-item1.html.twig", 25)->display($context);
+            // line 26
             echo "    ";
         }
-        // line 24
+        // line 27
         echo "</div>
      
     ";
-        // line 26
+        // line 29
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable($this->getAttribute($this->getAttribute(($context["page"] ?? null), "media", []), "images", []));
         foreach ($context['_seq'] as $context["_key"] => $context["image"]) {
-            // line 27
+            // line 30
             echo "        ";
             echo $this->getAttribute($this->getAttribute($context["image"], "cropZoom", [0 => 800, 1 => 400], "method"), "html", []);
             echo "
@@ -112,7 +128,7 @@ class __TwigTemplate_69a23103cb8dd7e235dff2a77529f70d8a0d169c126502494dec6fedaa0
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['image'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 29
+        // line 32
         echo "   
    
     
@@ -120,9 +136,9 @@ class __TwigTemplate_69a23103cb8dd7e235dff2a77529f70d8a0d169c126502494dec6fedaa0
 
 <p class=\"prev-next text-center\">
     ";
-        // line 35
+        // line 38
         if ( !$this->getAttribute(($context["page"] ?? null), "isLast", [])) {
-            // line 36
+            // line 39
             echo "            <a class=\"btn\" href=\"";
             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "prevSibling", []), "url", []), "html", null, true);
             echo "\"><i class=\"fa fa-angle-left\"></i> ";
@@ -130,12 +146,12 @@ class __TwigTemplate_69a23103cb8dd7e235dff2a77529f70d8a0d169c126502494dec6fedaa0
             echo "</a>
     ";
         }
-        // line 38
+        // line 41
         echo "
     ";
-        // line 39
+        // line 42
         if ( !$this->getAttribute(($context["page"] ?? null), "isFirst", [])) {
-            // line 40
+            // line 43
             echo "        <a class=\"btn\" href=\"";
             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "nextSibling", []), "url", []), "html", null, true);
             echo "\">";
@@ -143,7 +159,7 @@ class __TwigTemplate_69a23103cb8dd7e235dff2a77529f70d8a0d169c126502494dec6fedaa0
             echo " <i class=\"fa fa-angle-right\"></i></a>
     ";
         }
-        // line 42
+        // line 45
         echo "</p>
 ";
     }
@@ -160,7 +176,7 @@ class __TwigTemplate_69a23103cb8dd7e235dff2a77529f70d8a0d169c126502494dec6fedaa0
 
     public function getDebugInfo()
     {
-        return array (  147 => 42,  139 => 40,  137 => 39,  134 => 38,  126 => 36,  124 => 35,  116 => 29,  107 => 27,  103 => 26,  99 => 24,  96 => 23,  93 => 22,  91 => 21,  85 => 18,  81 => 16,  67 => 15,  63 => 14,  60 => 13,  56 => 11,  53 => 10,  50 => 9,  44 => 7,  41 => 6,  39 => 5,  36 => 4,  34 => 3,  30 => 1,);
+        return array (  163 => 45,  155 => 43,  153 => 42,  150 => 41,  142 => 39,  140 => 38,  132 => 32,  123 => 30,  119 => 29,  115 => 27,  112 => 26,  109 => 25,  107 => 24,  101 => 21,  97 => 19,  82 => 18,  69 => 17,  63 => 14,  60 => 13,  56 => 11,  53 => 10,  50 => 9,  44 => 7,  41 => 6,  39 => 5,  36 => 4,  34 => 3,  30 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -187,6 +203,9 @@ class __TwigTemplate_69a23103cb8dd7e235dff2a77529f70d8a0d169c126502494dec6fedaa0
 {% endif %}
 
  <p> {{ page.header.textcontent }} </p>
+  
+
+  {% if page.header.attachments %} {% markdown %}{{ page.header.attachmentembed|e }}{% endmarkdown %} {% endif %}
  {% if page.header.audioembed %} {% markdown %}{{ page.header.audioembed|e }} {% endmarkdown %} {% endif %}
    
     <div class=\"e-content\">

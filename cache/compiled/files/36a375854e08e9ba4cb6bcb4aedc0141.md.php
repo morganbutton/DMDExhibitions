@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledMarkdownFile',
     'filename' => '/var/www/html/user/pages/student-portal/form.md',
-    'modified' => 1628122945,
+    'modified' => 1628125550,
     'data' => [
         'header' => [
             'title' => 'Student Portal',
@@ -60,6 +60,15 @@ return [
                         'classes' => 'text'
                     ],
                     5 => [
+                        'name' => 'attachments',
+                        'label' => 'Attachment (PDF only)',
+                        'type' => 'file',
+                        'multiple' => true,
+                        'accept' => [
+                            0 => 'application/pdf'
+                        ]
+                    ],
+                    6 => [
                         'name' => 'images',
                         'label' => 'Image Files',
                         'type' => 'file',
@@ -68,7 +77,7 @@ return [
                             0 => 'image/*'
                         ]
                     ],
-                    6 => [
+                    7 => [
                         'name' => 'audio',
                         'label' => 'Audio File',
                         'type' => 'file',
@@ -77,7 +86,7 @@ return [
                             0 => 'audio/*'
                         ]
                     ],
-                    7 => [
+                    8 => [
                         'name' => 'audioembed',
                         'label' => 'Audio Embed Format:<br><b> ![Student audio file](pasteyourfilenamehere.mp3)</B> <br> (When uploading more than one audio file, copy and paste each embed on its own line. dont forget to edit the audio file type if necessary)',
                         'type' => 'textarea',
@@ -141,6 +150,12 @@ form:
       type: textarea
       size: long
       classes: text
+    - name: attachments
+      label: "Attachment (PDF only)"
+      type: file
+      multiple: true
+      accept:
+        - application/pdf
     - name: images
       label: "Image Files"
       type: file

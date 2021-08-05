@@ -24,4 +24,4 @@ taxonomy:
 
 ===
 
-###DMD400 : Fall2020
+###Capstone : Fall2020
