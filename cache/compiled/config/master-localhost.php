@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1628130220,
-    'checksum' => 'cb3adc753f212fe754ceb4cfee64db2e',
+    'timestamp' => 1628132460,
+    'checksum' => '4f0f9ca33563b66e98e1fc9541486521',
     'files' => [
         'user/config' => [
             'media' => [
@@ -23,7 +23,7 @@ return [
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1628130200
+                'modified' => 1628132446
             ],
             'themes/quark' => [
                 'file' => 'user/config/themes/quark.yaml',

@@ -58,17 +58,30 @@ class __TwigTemplate_69a23103cb8dd7e235dff2a77529f70d8a0d169c126502494dec6fedaa0
         }
         // line 13
         echo "
- <p> ";
-        // line 14
-        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", []), "textcontent", []), "html", null, true);
-        echo " </p>
-  
 
-  ";
+ <hr>
+ <figure> ";
+        // line 16
+        if ($this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", []), "audioembed", [])) {
+            echo " <h5>Audio:</h5> ";
+            ob_start();
+            echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", []), "audioembed", []));
+            echo "<br><br> ";
+            $content = ob_get_clean();
+            preg_match("/^\s*/", $content, $matches);
+            $lines = explode("\n", $content);
+            $content = preg_replace('/^' . $matches[0]. '/', "", $lines);
+            $content = join("\n", $content);
+            echo $this->env->getExtension('Grav\Common\Twig\Extension\GravExtension')->markdownFunction($context, $content);
+            echo " ";
+        }
+        echo "</figure>
+ <figure>";
         // line 17
         if ($this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", []), "attachments", [])) {
-            echo " ";
+            echo " <h5> Documentation: </h5>";
             ob_start();
+            echo " ";
             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", []), "attachmentembed", []));
             $content = ob_get_clean();
             preg_match("/^\s*/", $content, $matches);
@@ -78,67 +91,90 @@ class __TwigTemplate_69a23103cb8dd7e235dff2a77529f70d8a0d169c126502494dec6fedaa0
             echo $this->env->getExtension('Grav\Common\Twig\Extension\GravExtension')->markdownFunction($context, $content);
             echo " ";
         }
-        // line 18
-        echo " ";
-        if ($this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", []), "audioembed", [])) {
-            echo " ";
-            ob_start();
-            echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", []), "audioembed", []));
-            echo " ";
-            $content = ob_get_clean();
-            preg_match("/^\s*/", $content, $matches);
-            $lines = explode("\n", $content);
-            $content = preg_replace('/^' . $matches[0]. '/', "", $lines);
-            $content = join("\n", $content);
-            echo $this->env->getExtension('Grav\Common\Twig\Extension\GravExtension')->markdownFunction($context, $content);
-            echo " ";
-        }
-        // line 19
-        echo "   
-    <div class=\"e-content\">
+        echo "</figure>
+ <br>
+ <hr>
+ ";
+        // line 20
+        if ($this->getAttribute(($context["page"] ?? null), "content", [])) {
+            // line 21
+            echo "<div class=\"e-content\">
+
+<figure>
+    <br>
         ";
-        // line 21
-        echo $this->getAttribute(($context["page"] ?? null), "content", []);
-        echo "
-    </div>
+            // line 25
+            echo $this->getAttribute(($context["page"] ?? null), "content", []);
+            echo "
+        </figure>
+</div>
+";
+        }
+        // line 29
+        echo " 
+<hr>
+ <figure><h5>About</h5><p> ";
+        // line 31
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", []), "textcontent", []), "html", null, true);
+        echo " </p></figure>
+ <hr>
+  
+
+ 
+
+   
+    
 
     ";
-        // line 24
+        // line 40
         if ((($this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", []), "continue_link", []) === true) && $this->getAttribute($this->getAttribute($this->getAttribute(($context["config"] ?? null), "plugins", []), "comments", []), "enabled", []))) {
-            // line 25
+            // line 41
             echo "        ";
-            $this->loadTemplate("partials/comments.html.twig", "partials/blog-item1.html.twig", 25)->display($context);
-            // line 26
+            $this->loadTemplate("partials/comments.html.twig", "partials/blog-item1.html.twig", 41)->display($context);
+            // line 42
             echo "    ";
         }
-        // line 27
+        // line 43
         echo "</div>
      
-    ";
-        // line 29
+ 
+    
+  
+   
+
+
+    <div id=\"slider\">
+        <figure>
+        ";
+        // line 53
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable($this->getAttribute($this->getAttribute(($context["page"] ?? null), "media", []), "images", []));
         foreach ($context['_seq'] as $context["_key"] => $context["image"]) {
-            // line 30
-            echo "        ";
-            echo $this->getAttribute($this->getAttribute($context["image"], "cropZoom", [0 => 800, 1 => 400], "method"), "html", []);
+            // line 54
+            echo "            ";
+            echo $this->getAttribute($context["image"], "html", []);
             echo "
-    ";
+        ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['image'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 32
-        echo "   
+        // line 56
+        echo "        </figure>
+    </div>
+
+   
+
+   
    
     
      
 
 <p class=\"prev-next text-center\">
     ";
-        // line 38
+        // line 67
         if ( !$this->getAttribute(($context["page"] ?? null), "isLast", [])) {
-            // line 39
+            // line 68
             echo "            <a class=\"btn\" href=\"";
             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "prevSibling", []), "url", []), "html", null, true);
             echo "\"><i class=\"fa fa-angle-left\"></i> ";
@@ -146,12 +182,12 @@ class __TwigTemplate_69a23103cb8dd7e235dff2a77529f70d8a0d169c126502494dec6fedaa0
             echo "</a>
     ";
         }
-        // line 41
+        // line 70
         echo "
     ";
-        // line 42
+        // line 71
         if ( !$this->getAttribute(($context["page"] ?? null), "isFirst", [])) {
-            // line 43
+            // line 72
             echo "        <a class=\"btn\" href=\"";
             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "nextSibling", []), "url", []), "html", null, true);
             echo "\">";
@@ -159,7 +195,7 @@ class __TwigTemplate_69a23103cb8dd7e235dff2a77529f70d8a0d169c126502494dec6fedaa0
             echo " <i class=\"fa fa-angle-right\"></i></a>
     ";
         }
-        // line 45
+        // line 74
         echo "</p>
 ";
     }
@@ -176,7 +212,7 @@ class __TwigTemplate_69a23103cb8dd7e235dff2a77529f70d8a0d169c126502494dec6fedaa0
 
     public function getDebugInfo()
     {
-        return array (  163 => 45,  155 => 43,  153 => 42,  150 => 41,  142 => 39,  140 => 38,  132 => 32,  123 => 30,  119 => 29,  115 => 27,  112 => 26,  109 => 25,  107 => 24,  101 => 21,  97 => 19,  82 => 18,  69 => 17,  63 => 14,  60 => 13,  56 => 11,  53 => 10,  50 => 9,  44 => 7,  41 => 6,  39 => 5,  36 => 4,  34 => 3,  30 => 1,);
+        return array (  199 => 74,  191 => 72,  189 => 71,  186 => 70,  178 => 68,  176 => 67,  163 => 56,  154 => 54,  150 => 53,  138 => 43,  135 => 42,  132 => 41,  130 => 40,  118 => 31,  114 => 29,  107 => 25,  101 => 21,  99 => 20,  81 => 17,  65 => 16,  60 => 13,  56 => 11,  53 => 10,  50 => 9,  44 => 7,  41 => 6,  39 => 5,  36 => 4,  34 => 3,  30 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -202,24 +238,53 @@ class __TwigTemplate_69a23103cb8dd7e235dff2a77529f70d8a0d169c126502494dec6fedaa0
     </div>
 {% endif %}
 
- <p> {{ page.header.textcontent }} </p>
+
+ <hr>
+ <figure> {% if page.header.audioembed %} <h5>Audio:</h5> {% markdown %}{{ page.header.audioembed|e }}<br><br> {% endmarkdown %} {% endif %}</figure>
+ <figure>{% if page.header.attachments %} <h5> Documentation: </h5>{% markdown %} {{ page.header.attachmentembed|e }}{% endmarkdown %} {% endif %}</figure>
+ <br>
+ <hr>
+ {% if page.content %}
+<div class=\"e-content\">
+
+<figure>
+    <br>
+        {{ page.content|raw }}
+        </figure>
+</div>
+{% endif %}
+ 
+<hr>
+ <figure><h5>About</h5><p> {{ page.header.textcontent }} </p></figure>
+ <hr>
   
 
-  {% if page.header.attachments %} {% markdown %}{{ page.header.attachmentembed|e }}{% endmarkdown %} {% endif %}
- {% if page.header.audioembed %} {% markdown %}{{ page.header.audioembed|e }} {% endmarkdown %} {% endif %}
+ 
+
    
-    <div class=\"e-content\">
-        {{ page.content|raw }}
-    </div>
+    
 
     {% if page.header.continue_link is same as(true) and config.plugins.comments.enabled %}
         {% include 'partials/comments.html.twig' %}
     {% endif %}
 </div>
      
-    {% for image in page.media.images %}
-        {{ image.cropZoom(800,400).html|raw }}
-    {% endfor %}
+ 
+    
+  
+   
+
+
+    <div id=\"slider\">
+        <figure>
+        {% for image in page.media.images %}
+            {{ image.html|raw }}
+        {% endfor %}
+        </figure>
+    </div>
+
+   
+
    
    
     

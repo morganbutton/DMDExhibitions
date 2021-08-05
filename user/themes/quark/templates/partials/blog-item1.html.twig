@@ -11,24 +11,53 @@
     </div>
 {% endif %}
 
- <p> {{ page.header.textcontent }} </p>
+
+ <hr>
+ <figure> {% if page.header.audioembed %} <h5>Audio:</h5> {% markdown %}{{ page.header.audioembed|e }}<br><br> {% endmarkdown %} {% endif %}</figure>
+ <figure>{% if page.header.attachments %} <h5> Documentation: </h5>{% markdown %} {{ page.header.attachmentembed|e }}{% endmarkdown %} {% endif %}</figure>
+ <br>
+ <hr>
+ {% if page.content %}
+<div class="e-content">
+
+<figure>
+    <br>
+        {{ page.content|raw }}
+        </figure>
+</div>
+{% endif %}
+ 
+<hr>
+ <figure><h5>About</h5><p> {{ page.header.textcontent }} </p></figure>
+ <hr>
   
 
-  {% if page.header.attachments %} {% markdown %}{{ page.header.attachmentembed|e }}{% endmarkdown %} {% endif %}
- {% if page.header.audioembed %} {% markdown %}{{ page.header.audioembed|e }} {% endmarkdown %} {% endif %}
+ 
+
    
-    <div class="e-content">
-        {{ page.content|raw }}
-    </div>
+    
 
     {% if page.header.continue_link is same as(true) and config.plugins.comments.enabled %}
         {% include 'partials/comments.html.twig' %}
     {% endif %}
 </div>
      
-    {% for image in page.media.images %}
-        {{ image.cropZoom(800,400).html|raw }}
-    {% endfor %}
+ 
+    
+  
+   
+
+
+    <div id="slider">
+        <figure>
+        {% for image in page.media.images %}
+            {{ image.html|raw }}
+        {% endfor %}
+        </figure>
+    </div>
+
+   
+
    
    
     

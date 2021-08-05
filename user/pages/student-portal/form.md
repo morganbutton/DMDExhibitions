@@ -45,7 +45,7 @@ form:
       accept:
         - application/pdf
     - name: attachmentembed
-      label: "PDF Embed Format:<br><b> [pdf attachment](pasteyourfilenamehere.pdf)</b> <br> (When uploading more than one pdf file, copy and paste each embed on its own line.) <br> <b> (Only fill this out if you have a PDF file) </b>"
+      label: "PDF Embed Format:<br><b> [pasteyourfilenamehere.pdf](pasteyourfilenamehere.pdf)</b> <br> (When uploading more than one pdf file, copy and paste each embed on its own line.) <br> <b> (Only fill this out if you have a PDF file) </b>"
       type: textarea
       size: long
       classes: text
