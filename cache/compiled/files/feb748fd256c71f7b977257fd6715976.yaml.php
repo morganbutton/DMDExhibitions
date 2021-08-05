@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/html/user/plugins/admin/languages/hu.yaml',
-    'modified' => 1625096574,
+    'modified' => 1628130128,
     'data' => [
         'PLUGIN_ADMIN' => [
             'ADMIN_NOSCRIPT_MSG' => 'Kérjük, engedélyezd a JavaScriptet a böngésződben.',

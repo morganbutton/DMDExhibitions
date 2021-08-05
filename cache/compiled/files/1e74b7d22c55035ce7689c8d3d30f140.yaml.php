@@ -2,12 +2,12 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/html/user/plugins/flex-objects/blueprints.yaml',
-    'modified' => 1625096582,
+    'modified' => 1628130098,
     'data' => [
         'name' => 'Flex Objects',
         'slug' => 'flex-objects',
         'type' => 'plugin',
-        'version' => '1.0.15',
+        'version' => '1.0.16',
         'description' => 'Flex Objects plugin allows you to manage Flex Objects in Grav Admin.',
         'icon' => 'list-alt',
         'author' => [

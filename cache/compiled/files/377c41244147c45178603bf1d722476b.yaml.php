@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/html/user/plugins/admin/languages/fa.yaml',
-    'modified' => 1625096575,
+    'modified' => 1628130128,
     'data' => [
         'PLUGIN_ADMIN' => [
             'ADMIN_NOSCRIPT_MSG' => 'لطفاً جاوا اسکریپت را در مرورگرتان فعال کنید.',

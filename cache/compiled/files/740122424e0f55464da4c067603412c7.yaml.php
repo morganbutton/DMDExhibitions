@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/html/system/blueprints/flex/pages.yaml',
-    'modified' => 1625096557,
+    'modified' => 1628129630,
     'data' => [
         'title' => 'Pages',
         'description' => 'Manage your Grav Pages in Flex.',
@@ -193,9 +193,9 @@ return [
                     ],
                     'fields' => [
                         0 => 'key',
-                        1 => 'menu',
-                        2 => 'title',
-                        3 => 'name'
+                        1 => 'slug',
+                        2 => 'menu',
+                        3 => 'title'
                     ]
                 ]
             ]
