@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledMarkdownFile',
     'filename' => '/var/www/html/user/pages/dmd-exhibitions/capstone-project-exhibition/blog.md',
-    'modified' => 1628122490,
+    'modified' => 1628122582,
     'data' => [
         'header' => [
             'title' => 'CAPSTONE PROJECT EXHIBITION FALL 2020',
@@ -26,24 +26,31 @@ return [
                 'pagination' => true,
                 'url_taxonomy_filters' => true
             ],
-            'media_order' => 'dmd400-fa20-exhibition.jpg'
+            'media_order' => 'dmd400-fa20-exhibition.jpg',
+            'taxonomy' => [
+                'tag' => [
+                    0 => 'dmd400'
+                ]
+            ]
         ],
-        'frontmatter' => 'title: \'CAPSTONE PROJECT EXHIBITION FALL 2020\'
+        'frontmatter' => 'title: "CAPSTONE PROJECT EXHIBITION FALL 2020"
 content:
-    items:
-        -
-            \'@taxonomy\':
-                tag:
-                    - fall2020
-                    - dmd400
-                    - capstone
-    limit: 5000
-    order:
-        by: date
-        dir: desc
-    pagination: true
-    url_taxonomy_filters: true
-media_order: dmd400-fa20-exhibition.jpg',
+  items:
+    - "@taxonomy":
+        tag:
+          - fall2020
+          - dmd400
+          - capstone
+  limit: 5000
+  order:
+    by: date
+    dir: desc
+  pagination: true
+  url_taxonomy_filters: true
+media_order: dmd400-fa20-exhibition.jpg
+taxonomy:
+  tag:
+    - dmd400',
         'markdown' => '![dmd400-fa20-exhibition](../../exhibitionimages/dmd400-fa20-exhibition.jpg?cropResize=300,300 "dmd400-fa20-exhibition")
 
 ===

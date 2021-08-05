@@ -11,8 +11,8 @@ use Twig\Sandbox\SecurityNotAllowedFunctionError;
 use Twig\Source;
 use Twig\Template;
 
-/* partials/footer.html.twig */
-class __TwigTemplate_0075a06996cebe6564a5a5cf56fe941d94d08549d54a0132472a31011f3d90a5 extends \Twig\Template
+/* @Page:/var/www/html/user/pages/dmd-exhibitions/cyborgs-project-exhibition */
+class __TwigTemplate_7b5c9e1a1595879f3e9e5a92787b7a559748da420222eb51c44b5b77eaa9b28d extends \Twig\Template
 {
     public function __construct(Environment $env)
     {
@@ -27,30 +27,19 @@ class __TwigTemplate_0075a06996cebe6564a5a5cf56fe941d94d08549d54a0132472a31011f3
     protected function doDisplay(array $context, array $blocks = [])
     {
         // line 1
-        echo "<section id=\"footer\" class=\"section bg-gray\">
-    <section class=\"container ";
-        // line 2
-        echo twig_escape_filter($this->env, ($context["grid_size"] ?? null), "html", null, true);
-        echo "\">
-       
-    </section>
-</section>
-";
+        echo "<p><img title=\"dmd300-fa20-exhibition\" alt=\"dmd300-fa20-exhibition\" src=\"/images/3/9/8/e/2/398e269599fdbfe4fe22f0248745cb1d31bf82ce-cyborgs.jpg\" /></p>
+<p>===</p>
+<h3>Cyborgs : Fall2020</h3>";
     }
 
     public function getTemplateName()
     {
-        return "partials/footer.html.twig";
-    }
-
-    public function isTraitable()
-    {
-        return false;
+        return "@Page:/var/www/html/user/pages/dmd-exhibitions/cyborgs-project-exhibition";
     }
 
     public function getDebugInfo()
     {
-        return array (  33 => 2,  30 => 1,);
+        return array (  30 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -63,11 +52,8 @@ class __TwigTemplate_0075a06996cebe6564a5a5cf56fe941d94d08549d54a0132472a31011f3
 
     public function getSourceContext()
     {
-        return new Source("<section id=\"footer\" class=\"section bg-gray\">
-    <section class=\"container {{ grid_size }}\">
-       
-    </section>
-</section>
-", "partials/footer.html.twig", "/var/www/html/user/themes/quark/templates/partials/footer.html.twig");
+        return new Source("<p><img title=\"dmd300-fa20-exhibition\" alt=\"dmd300-fa20-exhibition\" src=\"/images/3/9/8/e/2/398e269599fdbfe4fe22f0248745cb1d31bf82ce-cyborgs.jpg\" /></p>
+<p>===</p>
+<h3>Cyborgs : Fall2020</h3>", "@Page:/var/www/html/user/pages/dmd-exhibitions/cyborgs-project-exhibition", "");
     }
 }

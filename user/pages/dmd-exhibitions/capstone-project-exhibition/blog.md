@@ -17,6 +17,7 @@ media_order: dmd400-fa20-exhibition.jpg
 taxonomy:
   tag:
     - dmd400
+    - capstone
 ---
 
 ![dmd400-fa20-exhibition](../../exhibitionimages/dmd400-fa20-exhibition.jpg?cropResize=300,300 "dmd400-fa20-exhibition")

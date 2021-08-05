@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledMarkdownFile',
     'filename' => '/var/www/html/user/pages/student-portal/form.md',
-    'modified' => 1628121363,
+    'modified' => 1628122945,
     'data' => [
         'header' => [
             'title' => 'Student Portal',
@@ -54,7 +54,7 @@ return [
                     ],
                     4 => [
                         'name' => 'content',
-                        'label' => 'Youtube Embed Format: <br><b> [plugin:youtube](https://www.youtube.com/watch?v=BK8guP9ov2U)</b><br> (When uploading more than one Youtube video copy and paste each embed on its own line)',
+                        'label' => 'Youtube Embed Format: <br><b> [plugin:youtube](https://www.youtube.com/watch?v=fJC92FyMifI)</b><br> (When uploading more than one Youtube video copy and paste each embed on its own line)',
                         'type' => 'textarea',
                         'size' => 'long',
                         'classes' => 'text'
@@ -96,7 +96,7 @@ return [
                         'add_page' => true
                     ],
                     1 => [
-                        'redirect' => '/projects'
+                        'redirect' => '/'
                     ]
                 ]
             ],
@@ -137,7 +137,7 @@ form:
       size: long
       classes: text
     - name: content
-      label: "Youtube Embed Format: <br><b> [plugin:youtube](https://www.youtube.com/watch?v=BK8guP9ov2U)</b><br> (When uploading more than one Youtube video copy and paste each embed on its own line)"
+      label: "Youtube Embed Format: <br><b> [plugin:youtube](https://www.youtube.com/watch?v=fJC92FyMifI)</b><br> (When uploading more than one Youtube video copy and paste each embed on its own line)"
       type: textarea
       size: long
       classes: text
@@ -163,7 +163,7 @@ form:
       value: Submit
   process:
     - add_page: true
-    - redirect: /projects
+    - redirect: /
 twig_first: true',
         'markdown' => '## Student work upload form
 '
