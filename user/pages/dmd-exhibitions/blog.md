@@ -2,16 +2,13 @@
 title: "DMD Exhibitions"
 content:
   items:
-    - "@taxonomy":
-        type:
-          - exhibition
-
+    - "@self.children"
+  limit: 5000
   order:
     by: date
     dir: desc
   pagination: true
   url_taxonomy_filters: true
-  limit: 5000
 ---
 
 #DMD Exhibitions

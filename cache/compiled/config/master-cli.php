@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1628120582,
-    'checksum' => '91ce3f9eee57421bcbcad542ea803d06',
+    'timestamp' => 1628121602,
+    'checksum' => 'e7d1ad8ab4bb0d734600587708e667f3',
     'files' => [
         'user/config' => [
             'media' => [
@@ -19,11 +19,11 @@ return [
             ],
             'site' => [
                 'file' => 'user/config/site.yaml',
-                'modified' => 1628118090
+                'modified' => 1628121378
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1628120064
+                'modified' => 1628121576
             ],
             'themes/quark' => [
                 'file' => 'user/config/themes/quark.yaml',
@@ -942,9 +942,7 @@ node_modules'
                 'email' => 'joe@example.com'
             ],
             'taxonomies' => [
-                0 => 'tag',
-                1 => 'theme',
-                2 => 'type'
+                0 => 'tag'
             ],
             'metadata' => [
                 'description' => 'Grav is an easy to use, yet powerful, open source flat-file CMS'

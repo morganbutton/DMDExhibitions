@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/html/user/config/site.yaml',
-    'modified' => 1628118090,
+    'modified' => 1628121378,
     'data' => [
         'title' => 'Grav',
         'author' => [
@@ -13,9 +13,7 @@ return [
             'description' => 'Grav is an easy to use, yet powerful, open source flat-file CMS'
         ],
         'taxonomies' => [
-            0 => 'tag',
-            1 => 'theme',
-            2 => 'type'
+            0 => 'tag'
         ]
     ]
 ];
