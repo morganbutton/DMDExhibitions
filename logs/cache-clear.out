@@ -1,0 +1,5 @@
+Cleared:  /var/www/html/cache/twig/*
+Cleared:  /var/www/html/cache/doctrine/*
+Cleared:  /var/www/html/cache/compiled/*
+
+Touched: /var/www/html/user/config/system.yaml
