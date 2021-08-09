@@ -1,3 +1,2 @@
 accounts/
 cache/*
-!cache/.*
