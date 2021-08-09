@@ -109,11 +109,12 @@ class __TwigTemplate_ae58bb188cd577e782115a3ebcfd2a8e85f4858f20f1d870a684f757dea
             echo "        ";
         }
         // line 33
-        echo "    
+        echo "        <a href=\"/\" class=\"button big\">DMD Exhibitions</a>
+    
         ";
-        // line 34
-        $this->loadTemplate("testForm.html.twig", "testForm.html.twig", 34, "1203981516")->display($context);
-        // line 45
+        // line 35
+        $this->loadTemplate("testForm.html.twig", "testForm.html.twig", 35, "791369871")->display($context);
+        // line 46
         echo "   
 
     </section>
@@ -133,7 +134,7 @@ class __TwigTemplate_ae58bb188cd577e782115a3ebcfd2a8e85f4858f20f1d870a684f757dea
 
     public function getDebugInfo()
     {
-        return array (  117 => 45,  115 => 34,  112 => 33,  109 => 32,  106 => 31,  104 => 30,  98 => 27,  95 => 26,  92 => 25,  86 => 21,  83 => 20,  79 => 18,  76 => 17,  74 => 16,  68 => 13,  63 => 12,  60 => 11,  57 => 10,  54 => 9,  51 => 8,  46 => 1,  44 => 6,  42 => 5,  40 => 4,  38 => 3,  36 => 2,  30 => 1,);
+        return array (  118 => 46,  116 => 35,  112 => 33,  109 => 32,  106 => 31,  104 => 30,  98 => 27,  95 => 26,  92 => 25,  86 => 21,  83 => 20,  79 => 18,  76 => 17,  74 => 16,  68 => 13,  63 => 12,  60 => 11,  57 => 10,  54 => 9,  51 => 8,  46 => 1,  44 => 6,  42 => 5,  40 => 4,  38 => 3,  36 => 2,  30 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -178,6 +179,7 @@ class __TwigTemplate_ae58bb188cd577e782115a3ebcfd2a8e85f4858f20f1d870a684f757dea
         {% if show_breadcrumbs and config.plugins.breadcrumbs.enabled %}
             {% include 'partials/breadcrumbs.html.twig' %}
         {% endif %}
+        <a href=\"/\" class=\"button big\">DMD Exhibitions</a>
     
         {% embed 'partials/layout.html.twig' %}
             {% block item %}
@@ -201,7 +203,7 @@ class __TwigTemplate_ae58bb188cd577e782115a3ebcfd2a8e85f4858f20f1d870a684f757dea
 
 
 /* testForm.html.twig */
-class __TwigTemplate_ae58bb188cd577e782115a3ebcfd2a8e85f4858f20f1d870a684f757dea472ac___1203981516 extends \Twig\Template
+class __TwigTemplate_ae58bb188cd577e782115a3ebcfd2a8e85f4858f20f1d870a684f757dea472ac___791369871 extends \Twig\Template
 {
     public function __construct(Environment $env)
     {
@@ -215,33 +217,33 @@ class __TwigTemplate_ae58bb188cd577e782115a3ebcfd2a8e85f4858f20f1d870a684f757dea
 
     protected function doGetParent(array $context)
     {
-        // line 34
+        // line 35
         return "partials/layout.html.twig";
     }
 
     protected function doDisplay(array $context, array $blocks = [])
     {
-        $this->parent = $this->loadTemplate("partials/layout.html.twig", "testForm.html.twig", 34);
+        $this->parent = $this->loadTemplate("partials/layout.html.twig", "testForm.html.twig", 35);
         $this->parent->display($context, array_merge($this->blocks, $blocks));
     }
 
-    // line 35
+    // line 36
     public function block_item($context, array $blocks = [])
     {
-        // line 36
-        echo "                ";
-        $this->loadTemplate("partials/blog-item1.html.twig", "testForm.html.twig", 36)->display($context);
         // line 37
+        echo "                ";
+        $this->loadTemplate("partials/blog-item1.html.twig", "testForm.html.twig", 37)->display($context);
+        // line 38
         echo "            ";
     }
 
-    // line 41
+    // line 42
     public function block_sidebar($context, array $blocks = [])
     {
-        // line 42
-        echo "                ";
-        $this->loadTemplate("partials/sidebar.html.twig", "testForm.html.twig", 42)->display($context);
         // line 43
+        echo "                ";
+        $this->loadTemplate("partials/sidebar.html.twig", "testForm.html.twig", 43)->display($context);
+        // line 44
         echo "            ";
     }
 
@@ -257,7 +259,7 @@ class __TwigTemplate_ae58bb188cd577e782115a3ebcfd2a8e85f4858f20f1d870a684f757dea
 
     public function getDebugInfo()
     {
-        return array (  245 => 43,  242 => 42,  239 => 41,  235 => 37,  232 => 36,  229 => 35,  219 => 34,  117 => 45,  115 => 34,  112 => 33,  109 => 32,  106 => 31,  104 => 30,  98 => 27,  95 => 26,  92 => 25,  86 => 21,  83 => 20,  79 => 18,  76 => 17,  74 => 16,  68 => 13,  63 => 12,  60 => 11,  57 => 10,  54 => 9,  51 => 8,  46 => 1,  44 => 6,  42 => 5,  40 => 4,  38 => 3,  36 => 2,  30 => 1,);
+        return array (  247 => 44,  244 => 43,  241 => 42,  237 => 38,  234 => 37,  231 => 36,  221 => 35,  118 => 46,  116 => 35,  112 => 33,  109 => 32,  106 => 31,  104 => 30,  98 => 27,  95 => 26,  92 => 25,  86 => 21,  83 => 20,  79 => 18,  76 => 17,  74 => 16,  68 => 13,  63 => 12,  60 => 11,  57 => 10,  54 => 9,  51 => 8,  46 => 1,  44 => 6,  42 => 5,  40 => 4,  38 => 3,  36 => 2,  30 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -302,6 +304,7 @@ class __TwigTemplate_ae58bb188cd577e782115a3ebcfd2a8e85f4858f20f1d870a684f757dea
         {% if show_breadcrumbs and config.plugins.breadcrumbs.enabled %}
             {% include 'partials/breadcrumbs.html.twig' %}
         {% endif %}
+        <a href=\"/\" class=\"button big\">DMD Exhibitions</a>
     
         {% embed 'partials/layout.html.twig' %}
             {% block item %}

@@ -14,7 +14,7 @@ pagefrontmatter:
     player_parameters:
       autoplay: 0
 form:
-  name: testForm.md
+  name: dmdExhibitions.md
   template: null
   refresh_prevention: true
   ajax: true

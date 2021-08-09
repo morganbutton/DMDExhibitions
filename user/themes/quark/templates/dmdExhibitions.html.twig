@@ -30,10 +30,11 @@
         {% if show_breadcrumbs and config.plugins.breadcrumbs.enabled %}
             {% include 'partials/breadcrumbs.html.twig' %}
         {% endif %}
+        <a href="/" class="button big">DMD Exhibitions</a>
     
         {% embed 'partials/layout.html.twig' %}
             {% block item %}
-                {% include 'partials/blog-item1.html.twig' %}
+                {% include 'partials/dmdExhibitionsPartial.html.twig' %}
             {% endblock %}
             
             
