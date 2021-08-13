@@ -31,7 +31,11 @@
             {% include 'partials/breadcrumbs.html.twig' %}
         {% endif %}
         <a href="/" class="button big">DMD Exhibitions</a>
-    
+
+        {% for page in taxonomy.findTaxonomy({'exhibition': 'exhibition'}) %}
+            <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+        {% endfor %}    
+
         {% embed 'partials/layout.html.twig' %}
             {% block item %}
                 {% include 'partials/dmdExhibitionsPartial.html.twig' %}

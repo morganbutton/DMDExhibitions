@@ -17,6 +17,8 @@ taxonomy:
   tag:
     - dmd400
     - capstone
+  exhibition:
+    - exhibition
 ---
 
 ![dmd400-sp20-exhibition](../../exhibitionimages/CAPSTONESPRING2020.png?cropResize=300,300 "dmd400-sp20-exhibition")

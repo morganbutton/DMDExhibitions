@@ -17,6 +17,8 @@ taxonomy:
   tag:
     - dmd300
     - cyborgs
+  exhibition:
+    - exhibition
 ---
 
 ![dmd300-fa20-exhibition](../../exhibitionimages/cyborgs.jpg?cropResize=300,300 "dmd300-fa20-exhibition")
