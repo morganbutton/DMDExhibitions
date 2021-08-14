@@ -1,0 +1,30 @@
+form: flex-pages
+unique_id: e4b6829fe50b7867b737c3ea27a6d592
+url: '/pages/dmd-exhibitions/dmdtest/:add'
+user:
+  username: mtb5591
+  email: morgan_button@outlook.com
+timestamps:
+  created: 1628881139
+  updated: 1628881139
+data: null
+files: {  }
+object:
+  type: pages
+  key: dmd-exhibitions/dmdtest
+  storage_key: ''
+  timestamp: 0
+  serialized:
+    __META: {  }
+    storage_key: ''
+    parent_key: dmd-exhibitions
+    order: false
+    folder: dmdtest
+    template: default
+    lang: ''
+    root: false
+    route: /dmd-exhibitions
+    name: default
+    header:
+      title: dmdtest
+    frontmatter: "title: dmdtest\n"

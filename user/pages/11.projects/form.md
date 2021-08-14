@@ -6,7 +6,7 @@ pageconfig:
   include_username: true
   overwrite_mode: true
 pagefrontmatter:
-  template: testForm
+  template: dmdExhibitions
   title: "My new Blog post"
   taxonomy:
     category: blog
