@@ -1,3 +1,4 @@
+{# copied content frpm item.html.twig #}
 {% extends 'partials/base.html.twig' %}
 {% set blog = page.find(header_var('blog_url')|defined(theme_var('blog-page'))) %}
 {% set show_breadcrumbs = header_var('show_breadcrumbs', [page, blog])|defined(true) %}
@@ -30,8 +31,9 @@
         {% if show_breadcrumbs and config.plugins.breadcrumbs.enabled %}
             {% include 'partials/breadcrumbs.html.twig' %}
         {% endif %}
+        {# dmd exhibitions back to home button#}
         <a href="/" class="button big">DMD Exhibitions</a>
-
+        {# back to exhibition render button#}
         {% for page in taxonomy.findTaxonomy({'exhibition': 'exhibition'}) %}
             <li><a href="{{ page.url }}">{{ page.title }}</a></li>
         {% endfor %}    

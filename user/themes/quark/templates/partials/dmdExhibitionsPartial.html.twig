@@ -1,3 +1,4 @@
+{# copied content from blog-item.html.twig #}
 <div class="content-item h-entry">
 
 {% if not hero_image_name %}
@@ -13,7 +14,9 @@
 
 
  <hr>
+ {# student form upload audio embed render #}
  <figure> {% if page.header.audioembed %} <h5>Audio:</h5> {% markdown %}{{ page.header.audioembed|e }}<br><br> {% endmarkdown %} {% endif %}</figure>
+ {# student form upload pdf embed render #}
  <figure>{% if page.header.attachments %} <h5> Documentation: </h5>{% markdown %} {{ page.header.attachmentembed|e }}{% endmarkdown %} {% endif %}</figure>
  <br>
  <hr>
@@ -47,7 +50,7 @@
   
    
 
-
+   {# student form upload multiple image render #}
     <div id="slider">
         <figure>
         {% for image in page.media.images %}
@@ -55,7 +58,7 @@
         {% endfor %}
         </figure>
     </div>
-
+{# if your looking for the youtube render for student upload form it is done in markdown because it relies on a plugin that conflicts with twig formatting #}
    
 
    
